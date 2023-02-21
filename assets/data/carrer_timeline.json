@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "title" : "Mobile Specialist",
+      "subTitle" : "TOTVS - RJ Consultores",
+      "description" : "- Home office em Empresa líder de vendas em passagens de ônibus na América Latina\n- Responsável pela manutenção, adição de novas features e ideias para melhoria do produto em geral.\n- Flutter(mobx,modular)/ android nativo(dagger, mvc, mvvm, databinding, retrofit,navigationView)/ iOS(Swift4), Firebase, SCRUM, JIRA, integração de redes sociais, manutenção e refatoração do código para melhores práticas.",
+      "duration" : "2022 - Atual"
+    },
+    {
+      "title" : "Mobile Software Engineer",
+      "subTitle" : "Avanade",
+      "description" : "Home Office - Projeto: Hospital Israelita Albert Einstein - Desenvolvimento Flutter(BLOC, PROVIDER, MICROAPPS, MULTIREPO).",
+      "duration" : "2021 - 2022"
+    },
+    {
+      "title" : "Analista de Sistemas / Desenvolvedor Mobile",
+      "subTitle" : "Accurate Software",
+      "description" : "Desenvolvimento Mobile, GIT, SCRUM, JIRA, Squads. Líder Técnico (equipe remota) em Flutter. Padrões: MOBX e GETIT. Atuando também como SM.\nOutros Projetos:\n- Claro (App Meu Técnico): Android, Ionic, MVVM, Clouds MCS(Oracle) e AWS(Amazon).\n- Consultor Oracle CIP com uso do Oracle Integration Cloud.\n- Migração OI Front e Back do ambiente CLASSIC para ambiente OIC 2.0 na Oracle Cloud (OKE). Uso: Docker e Kubernetes.\n- Claro ( Portal LGPD ), React, HTML, CSS.",
+      "duration" : "2018 - 2021"
+    },
+    {
+      "title" : "Desenvolvedor",
+      "subTitle" : "HQ Softwares",
+      "description" : "Home Office - Análise de requisitos, Automação, MSS, Tortoise e uso da Linguagem Delphi.",
+      "duration" : "2018 - 2018"
+    },
+    {
+      "title" : "Estágio",
+      "subTitle" : "Formatto Sistemas",
+      "description" : "Delphi na área de automação fiscal. Programação MVC e POO. Utilização de práticas Clean Code. Conhecimento em Git Flow, SQL e ETL. Noções de padrões de projeto, .ini e dlls.",
+      "duration" : "2017 - 2018"
+    },
+    {
+      "title" : "Estágio",
+      "subTitle" : "Cadastrando WEB",
+      "description" : "Auxílio na formatação de sites, HTML, lojas virtuais, WordPress, Hospedagem de sites e transferências FTP. Também auxiliava na inserção de palavras chaves após mineração, força na redundância das palavras chaves e cálculo de velocidade nas páginas.",
+      "duration" : "2017 - 2018"
+    },
+    {
+      "title" : "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo",
+      "subTitle" : "Analista de Sistemas",
+      "description" : "Graduação em Análise e desenvolvimento de sistemas. Congressos em que participei: Cotesi, Arduino Day, Latinoware.",
+      "duration" : "01/2016 - 12/2018"
+    },
+    {
+      "title" : "Almoxarife",
+      "subTitle" : "Tebarrot",
+      "description" : "Receber, despachar, controlar, armazenar e organizar mercadorias. Também reabastecia todos os setores da fábrica.",
+      "duration" : "2014 - 2015"
+    },
+    {
+      "title" : "Objetiva cursos profissionalizantes",
+      "subTitle" : "Gestão Empresarial",
+      "description" : "Módulos: Administração, Secretariado, Telemarketing, Administração de pessoal e Contabilidade.",
+      "duration" : "2015 - 2015"
+    },
+    {
+      "title" : "Escola Técnica Estadual",
+      "subTitle" : "Técnico em Informática para Internet",
+      "description" : "Desenvolvimento dos conhecimentos para ingresso no ambiente de TI. Hospedagem de sites, HTML, CSS, Design, Hardware.",
+      "duration" : "2012 - 2013"
+    }
+  ]
+}

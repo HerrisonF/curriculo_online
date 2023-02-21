@@ -1,0 +1,80 @@
+{
+    "projects": [ 
+        {
+            "title" : "Aplicativo de E-commerce",
+            "description" : "Desenvolvido para o supermercado Mambo. Atuei como líder técnico no projeto após indicar a tecnologia do Flutter. Neste, trabalhei no desenvolvimento, criação de tasks, escolhendo prioridades e delegando tasks. Primeira versão em 5 meses. Tecs: Flutter, MOBX, GETIT.",
+            "images": [
+                "assets/images/projetos/mambo/mambo_1.png",
+                "assets/images/projetos/mambo/mambo_2.jpeg"
+            ],
+            "link" : "https://play.google.com/store/apps/details?id=br.com.app.mambodelivery"
+        }, 
+        {
+            "title" : "Aplicativo White-Label",
+            "description" : "Desenvolvido para venda de passagens online. A aplicação se adapta por meio de parametrizações a cada tipo de usuário. Atuação em desenvolvimento de novas features, melhora no código, refatorações e propostas de novas ideias frente aos concorrentes. Tecs: Flutter, Modular e Firebase",
+            "images": [
+                "assets/images/projetos/mobileBus/mobileBus_1.png",
+                "assets/images/projestos/mobileBus/mobileBus_2.png",
+                "assets/images/projetos/mobileBus/mobileBus_3.png"
+            ],
+            "link" : "https://play.google.com/store/apps/details?id=br.com.rjconsultores.rotatransportes&hl=pt_BR&gl=US"
+        },
+        {
+            "title" : "Watch Summoner",
+            "description" : "Aplicativo na lançado na Play Store, com o tema do League Of Legends.  Na aplicação é possível ver informações do profile do jogador e jogadores com partida em andamento. Desenvolvido em Flutter e com GETX, foi utilizado dados da Riot e os recursos do Data Dragon para as imagens. A aplicação está em desenvolvimento contínuo com novas atualizações sempre que possível.",
+            "images": [
+                "assets/images/projetos/leagueOfLegends/lol_1.png",
+                "assets/images/projetos/leagueOfLegends/lol_2.png",
+                "assets/images/projetos/leagueOfLegends/lol_3.png",
+                "assets/images/projetos/leagueOfLegends/lol_4.png"
+            ],
+            "link" : "https://play.google.com/store/apps/details?id=com.herrison.legends_panel"
+        },
+        {
+            "title" : "CLARO LGPD",
+            "description" : "Participação no Projeto LGPD da Claro. O portal consiste em atender à lei conforme os direitos de compartilhamento de informação do usuário. No site, participei como front-end com uso de REACT e Mondrian(Design System) e também ajustando as configurações de cookies em um serviço específico para isso, a OneTrust. POCs em mobile com uso do Flutter e consumo REST. ",
+            "images": [
+                "assets/images/projetos/claro-lgpd/claro_1.png",
+                "assets/images/projetos/claro-lgpd/claro_2.png"
+            ],
+            "link" : "https://www.claro.com.br/privacidade/politica-de-privacidade"
+        },
+        {
+            "title" : "Meu Técnico",
+            "description" : "Participação no projeto MeuTecnico. Um aplicativo da Claro(NET) para auxiliar os técnicos em sua rotina. Com liberações de OS, rastreamento em escada, assinatura digital, entre outros.",
+            "images": [
+                "assets/images/projetos/meu-tecnico/meu_tecnico.png"
+            ],
+            "link" : "https://play.google.com/store/apps/details?id=br.com.net.meutecnico"
+        },
+        {
+            "title" : "Estude Melhor",
+            "description" : "Aplicativo em Android utilizando o Firebase. Foi um APP para meu TCC. O aplicativo seguia a linha de momorização por repetição(Leitner), onde os usuários cadastravam perguntas e respostas para estudar posteriormente com o passar dos dias. O aplicativo usava o feedback do usuário em cada questão para calcular quais eram as perguntas que ele mais tinha dificuldade e apresenta-las com mais frequência para que usuário conseguisse memorizar.",
+            "images": [
+                "assets/images/projetos/tcc/inicio-tcc.png",
+                "assets/images/projetos/tcc/listagem-tcc.png",
+                "assets/images/projetos/tcc/password-tcc.png",
+                "assets/images/projetos/tcc/pergunta-tcc.png"
+            ],
+            "link" : "http://luciene.pro.br/?p=58"
+        },
+        {
+            "title" : "CIP",
+            "description" : "Participação no Projeto de integração da CIP. O projeto consistia na integração de suas informações com utilização do OIC (Oracle Cloud Infrastructure).",
+            "images": [
+                "assets/images/projetos/cip/cip_1.png",
+                "assets/images/projetos/cip/cip_2.png"
+            ],
+            "link" : "https://www.cip-bancos.org.br/SitePages/Home.aspx"
+        },
+        {
+            "title" : "Migração OI",
+            "description" : "Participação no Projeto de migração do regionalizador da OI. Consistia em transferir o regionalizador do OIC Classic para um OIC mais atualizado. As tecnologias utilizadas foram Docker e Kubernetes para integrar ao OKE do OIC, e também Spring e OAuth2 para o backend. ",
+            "images": [
+                "assets/images/projetos/proje-oi/oi_1.png",
+                "assets/images/projetos/proje-oi/oi_2.png"
+            ],
+            "link" : "https://www.oi.com.br/"
+        }
+    ]
+}
