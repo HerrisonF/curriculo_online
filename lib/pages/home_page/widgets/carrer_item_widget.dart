@@ -27,14 +27,17 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
         layout: ResponsiveRowColumnType.ROW,
         children: [
           ResponsiveRowColumnItem(
-            rowFlex: 1,
+            rowFlex: 2,
             child: ResponsiveRowColumnItem(
               child: Center(
-                child: Text(
-                  widget.carrerItem.duration,
-                  style: GoogleFonts.mukta(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                child: Container(
+                  margin: const EdgeInsets.only(left: 10),
+                  child: Text(
+                    widget.carrerItem.duration,
+                    style: GoogleFonts.mukta(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
