@@ -14,7 +14,7 @@
             "description" : "Desenvolvido para venda de passagens online. A aplicação se adapta por meio de parametrizações a cada tipo de usuário. Atuação em desenvolvimento de novas features, melhora no código, refatorações e propostas de novas ideias frente aos concorrentes. Tecs: Flutter, Modular e Firebase",
             "images": [
                 "assets/images/projetos/mobileBus/mobileBus_1.png",
-                "assets/images/projestos/mobileBus/mobileBus_2.png",
+                "assets/images/projetos/mobileBus/mobileBus_2.png",
                 "assets/images/projetos/mobileBus/mobileBus_3.png"
             ],
             "link" : "https://play.google.com/store/apps/details?id=br.com.rjconsultores.rotatransportes&hl=pt_BR&gl=US"

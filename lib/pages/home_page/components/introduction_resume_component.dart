@@ -15,7 +15,7 @@ class IntroductionResumeComponent extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "Iniciei minha carreira como desenvolvedor Delphi, criando soluções para automação e trabalhando em refatorações. Também tenho vivências em Backend. Mas meu foco atual é a especialização na plataforma Mobile. ",
+            "Iniciei minha carreira como desenvolvedor Delphi, criando soluções para automação e trabalhando em refatorações e vivências em Backend. Meu foco atual é a especialização na plataforma Mobile. ",
             textAlign: TextAlign.justify,
             style: GoogleFonts.mukta(
               fontSize: 20,
@@ -26,7 +26,7 @@ class IntroductionResumeComponent extends StatelessWidget {
             height: 20,
           ),
           Text(
-            "Alguns de meus outros conhecimentos: React; Firebase, MVC e MVP; Práticas Clean Code; Git/Flow, SCRUM, JIRA, LT. ",
+            "Outros conhecimentos: React; Firebase, MVC, MVVP, MVP e Clean architecture; Jenkins; Práticas Clean Code; Git/Flow, SCRUM, JIRA, LT. ",
             style: GoogleFonts.mukta(
               fontSize: 20,
               fontWeight: FontWeight.w400,
@@ -38,21 +38,21 @@ class IntroductionResumeComponent extends StatelessWidget {
           Text(
             "Alguns projetos em que participei: ",
             style: GoogleFonts.mukta(
-              fontSize: 20,
-              fontWeight: FontWeight.w400,
+              fontSize: 22,
+              fontWeight: FontWeight.w500,
             ),
           ),
           const SizedBox(
             height: 20,
           ),
           Text(
-            " - White label MobileBus (Flutter) - TOTVS \n "
+            "- White label MobileBus (Flutter) - TOTVS \n "
             "- Hospital Albert Einstein (Flutter) - Avanade \n "
             "- Supermercado Mambo Delivery (L.T, Flutter) - Accurate Software \n "
             "- Meu Técnico(Claro, Android) - Accurate Software \n "
             "- Portal LGPD(Claro, React) - Accurate Software \n "
             "- Migração regionalizador OI(OI, Oracle Infrastructure Cloud) - Accurate Software \n "
-            "- Integração CIP(CIP, Oracle Cloud) - Accurate Software, entre outros. ",
+            "- Integração CIP(CIP, Oracle Cloud) - Accurate Software, \n entre outros. ",
             style: GoogleFonts.mukta(
               fontSize: 20,
               fontWeight: FontWeight.w400,
@@ -62,7 +62,7 @@ class IntroductionResumeComponent extends StatelessWidget {
             height: 20,
           ),
           Text(
-            "Minha perspectiva para o futuro é o aprimoramento do meu conhecimento em mobile, qualidade e arquitetura",
+            "Minha perspectiva para o futuro é o aprimoramento do meu conhecimento em mobile, qualidade e arquitetura.",
             style: GoogleFonts.mukta(
               fontSize: 20,
               fontWeight: FontWeight.w700,

@@ -3,6 +3,7 @@ class CarrerItem {
   String subTitle = "";
   String description = "";
   String duration = "";
+  int iconCode = 0;
 
   CarrerItem();
 
@@ -11,5 +12,6 @@ class CarrerItem {
     subTitle = json["subTitle"] ?? "";
     description = json["description"] ?? "";
     duration = json["duration"] ?? "";
+    iconCode = int.parse(json["iconCode"]) ?? 0;
   }
 }

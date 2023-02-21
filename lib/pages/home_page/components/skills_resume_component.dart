@@ -62,7 +62,7 @@ class SkillsResumeComponent extends StatelessWidget {
                   rowFit: FlexFit.tight,
                   child: SkillWidget(
                     title: "IOS",
-                    levelText: "Júnior",
+                    levelText: "Pleno",
                     icon: Icons.apple_outlined,
                   ),
                 )
@@ -111,7 +111,7 @@ class SkillsResumeComponent extends StatelessWidget {
                     margin: const EdgeInsets.only(left: 5),
                     child: const SkillWidget(
                       title: "React",
-                      levelText: "Júnior",
+                      levelText: "Pleno",
                       icon: FontAwesomeIcons.react,
                     ),
                   ),
@@ -157,7 +157,7 @@ class SkillsResumeComponent extends StatelessWidget {
                         title: "Inglês",
                         level: 0.6,
                         levelText: "60%",
-                        imageAssetPath: "images/languages/US.png",
+                        imageAssetPath: "assets/images/languages/US.png",
                         color: Colors.greenAccent,
                       ),
                     ),
@@ -169,7 +169,7 @@ class SkillsResumeComponent extends StatelessWidget {
                         title: "Japonês",
                         level: 0.01,
                         levelText: "5%",
-                        imageAssetPath: "images/languages/JP.png",
+                        imageAssetPath: "assets/images/languages/JP.png",
                         color: Colors.greenAccent,
                       ),
                     ),

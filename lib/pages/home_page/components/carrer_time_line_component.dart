@@ -8,7 +8,6 @@ import 'package:responsive_framework/responsive_framework.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class CarrerTimeLineComponent extends StatefulWidget {
-
   const CarrerTimeLineComponent({
     Key? key,
   }) : super(key: key);
@@ -20,7 +19,7 @@ class CarrerTimeLineComponent extends StatefulWidget {
 
 class _CarrerTimeLineComponentState extends State<CarrerTimeLineComponent> {
   final HomePageController homePageController =
-  GetIt.I.get<HomePageController>();
+      GetIt.I.get<HomePageController>();
 
   @override
   Widget build(BuildContext context) {
@@ -63,19 +62,21 @@ class _CarrerTimeLineComponentState extends State<CarrerTimeLineComponent> {
       itemCount: carrerFull.items.length,
       itemBuilder: (context, index) {
         return TimelineTile(
-          alignment: TimelineAlign.manual,
+          alignment: TimelineAlign.start,
           lineXY: 0.1,
           isFirst: index == 0,
           isLast: index == carrerFull.items.length - 1,
           indicatorStyle: IndicatorStyle(
             width: 40,
             height: 40,
-            indicator: _indicator(),
+            indicator: _indicator(carrerFull.items[index].iconCode),
           ),
-          beforeLineStyle: const LineStyle(
-            color: Colors.blue,
+          beforeLineStyle: LineStyle(
+            color: Colors.blue.shade300,
           ),
-          endChild: CarrerItemWidget(carrerItem: carrerFull.items[index],),
+          endChild: CarrerItemWidget(
+            carrerItem: carrerFull.items[index],
+          ),
         );
       },
     );
@@ -96,7 +97,7 @@ class _CarrerTimeLineComponentState extends State<CarrerTimeLineComponent> {
     );
   }
 
-  Widget _indicator(){
+  Widget _indicator(int iconCode) {
     return Container(
       decoration: const BoxDecoration(
         shape: BoxShape.circle,
@@ -110,14 +111,12 @@ class _CarrerTimeLineComponentState extends State<CarrerTimeLineComponent> {
       child: Container(
         decoration: const BoxDecoration(
           shape: BoxShape.circle,
-          color: Colors.blue
+          color: Colors.blue,
         ),
-        child: const Icon(Icons.adb_rounded),
+        child: Icon(
+          IconData(iconCode, fontFamily: 'MaterialIcons'),
+        ),
       ),
     );
   }
-
-
 }
-
-

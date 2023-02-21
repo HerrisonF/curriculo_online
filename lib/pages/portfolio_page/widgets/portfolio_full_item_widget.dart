@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:curriculo_online/core/models/portfolio.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'dart:html' as html;
 
@@ -15,7 +16,9 @@ class PortfolioFullItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 500,
+      decoration: BoxDecoration(
+          color: Colors.blue.shade50, borderRadius: BorderRadius.circular(8)),
+      height: 600,
       width: MediaQuery.of(context).size.width,
       margin: const EdgeInsets.symmetric(vertical: 20),
       padding: const EdgeInsets.all(10),
@@ -23,13 +26,32 @@ class PortfolioFullItemWidget extends StatelessWidget {
         layout: ResponsiveRowColumnType.COLUMN,
         children: [
           ResponsiveRowColumnItem(
+            child: Container(
+              margin: const EdgeInsets.symmetric(
+                vertical: 20,
+              ),
+              child: Text(
+                portfolio.title,
+                style: GoogleFonts.mukta(
+                    fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ),
+          ResponsiveRowColumnItem(
             child: ResponsiveRowColumn(
               layout: ResponsiveRowColumnType.ROW,
               children: [
                 ResponsiveRowColumnItem(
                   rowFlex: 1,
-                  child: Text(
-                    portfolio.description,
+                  child: Container(
+                    margin: const EdgeInsets.only(left: 20, right: 20),
+                    child: Text(
+                      portfolio.description,
+                      textAlign: TextAlign.justify,
+                      style: GoogleFonts.mukta(
+                        fontSize: 20,
+                      ),
+                    ),
                   ),
                 ),
                 ResponsiveRowColumnItem(
@@ -56,7 +78,7 @@ class PortfolioFullItemWidget extends StatelessWidget {
 
   Widget _buttonSeeMore() {
     return InkWell(
-      onTap: (){
+      onTap: () {
         html.window.open(portfolio.link, "_blank");
       },
       child: Container(

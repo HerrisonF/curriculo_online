@@ -1,5 +1,6 @@
 import 'package:curriculo_online/core/models/carrer_item.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class CarrerItemWidget extends StatefulWidget {
@@ -20,7 +21,7 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
       padding: const EdgeInsets.only(top: 30),
       decoration: BoxDecoration(
         color: Colors.blue.shade50,
-        borderRadius: BorderRadius.circular(8)
+        borderRadius: BorderRadius.circular(8),
       ),
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.ROW,
@@ -31,6 +32,10 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
               child: Center(
                 child: Text(
                   widget.carrerItem.duration,
+                  style: GoogleFonts.mukta(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
@@ -48,9 +53,9 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
                       child: Text(
                         widget.carrerItem.title,
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
+                        style: GoogleFonts.mukta(
+                          fontSize: 24,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20
                         ),
                       ),
                     ),
@@ -61,16 +66,18 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
                       child: Text(
                         widget.carrerItem.subTitle,
                         textAlign: TextAlign.center,
+                        style: GoogleFonts.mukta(fontSize: 22),
                       ),
                     ),
                   ),
                   ResponsiveRowColumnItem(
                     child: Container(
-                      margin: const EdgeInsets.symmetric(vertical: 20),
+                      margin:
+                          const EdgeInsets.only(top: 20, bottom: 20, right: 10),
                       alignment: Alignment.centerLeft,
                       child: Text(
                         widget.carrerItem.description,
-                        textAlign: TextAlign.justify,
+                        style: GoogleFonts.mukta(fontSize: 20),
                       ),
                     ),
                   ),

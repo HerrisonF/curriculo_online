@@ -37,7 +37,9 @@ flutter:
 
   assets:
     - assets/
-    - assets/images/languages/
+    - assets/images/foto.png
+    - assets/images/languages/US.png
+    - assets/images/languages/JP.png
     - assets/images/projetos/cip/
     - assets/images/projetos/claro-lgpd/
     - assets/images/projetos/leagueOfLegends/

@@ -20,7 +20,7 @@ class MyPictureWidget extends StatelessWidget {
       width: width,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(borderRadius),
-        child: Image.asset("images/foto.png"),
+        child: Image.asset("assets/images/foto.png"),
       ),
     );
   }
