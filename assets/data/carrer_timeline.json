@@ -3,7 +3,7 @@
     {
       "title" : "Mobile Specialist",
       "subTitle" : "TOTVS - RJ Consultores",
-      "description" : "- Home office em Empresa líder de vendas em passagens de ônibus na América Latina\n- Responsável pela manutenção, adição de novas features e ideias para melhoria do produto em geral.\n- Flutter(mobx,modular)/ android nativo(dagger, mvc, mvvm, databinding, retrofit,navigationView)/ iOS(Swift4), Firebase, SCRUM, JIRA, integração de redes sociais, manutenção e refatoração do código para melhores práticas.",
+      "description" : "- Home office em Empresa líder de vendas em passagens de ônibus na América Latina\n- Responsável pela manutenção, adição de novas features e ideias para melhoria do produto em geral.\n- Flutter(mobx,modular, value notifier, arquitetura limpa)/ android nativo(dagger, mvc, mvvm, databinding, retrofit,navigationView)/ iOS(Swift4), Figma, Jenkins, Firebase, SCRUM, JIRA, integração de redes sociais, pagamentos, notification, manutenção e refatoração do código para melhores práticas.",
       "duration" : "2022 - Atual",
       "iconCode" : "0xe6f2"
     },
