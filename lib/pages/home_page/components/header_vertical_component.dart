@@ -21,17 +21,18 @@ class HeaderVerticalComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(bottom: 20),
       margin: const EdgeInsets.only(bottom: 20),
+      padding: const EdgeInsets.only(top: 20),
       width: double.infinity,
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
           colors: [
-            Colors.lightBlue,
-            Colors.lightBlue,
-            Colors.blueAccent,
+            Colors.white,
+            Colors.lightBlueAccent,
+            Colors.lightBlueAccent,
+            Colors.lightBlueAccent.shade400,
           ],
         ),
         borderRadius: BorderRadius.circular(8),
@@ -41,16 +42,13 @@ class HeaderVerticalComponent extends StatelessWidget {
         children: [
           const ResponsiveRowColumnItem(
             child: MyPictureWidget(
-              height: 150,
-              width: 150,
+              height: 160,
+              width: 160,
               borderRadius: 100,
             ),
           ),
-          ResponsiveRowColumnItem(
-            child: Container(
-              margin: const EdgeInsets.symmetric(horizontal: 20),
-              child: const MyPersonalInfoWidget(alignment: Alignment.center),
-            ),
+          const ResponsiveRowColumnItem(
+            child: MyPersonalInfoWidget(alignment: Alignment.center),
           ),
           ResponsiveRowColumnItem(
             child: MySocialMediaWidget(

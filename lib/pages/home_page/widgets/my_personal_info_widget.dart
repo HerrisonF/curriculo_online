@@ -20,10 +20,11 @@ class MyPersonalInfoWidget extends StatelessWidget {
             alignment: alignment,
             child: Text(
               "Herrison Féres",
-              style: GoogleFonts.robotoSlab(
-                  color: Colors.black,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold),
+              style: GoogleFonts.baloo2(
+                color: Colors.white,
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
@@ -34,10 +35,11 @@ class MyPersonalInfoWidget extends StatelessWidget {
               margin: const EdgeInsets.only(top: 10),
               child: Text(
                 "Mobile Software Engineer",
-                style: GoogleFonts.roboto(
-                    color: Colors.black,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w400),
+                style: GoogleFonts.balooBhai2(
+                  color: Colors.black,
+                  fontSize: 22,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
           ),
@@ -47,10 +49,9 @@ class MyPersonalInfoWidget extends StatelessWidget {
             alignment: alignment,
             child: Text(
               "${DateUtil.howOldIam()} anos",
-              style: GoogleFonts.roboto(
+              style: GoogleFonts.lato(
                 color: Colors.black,
                 fontSize: 18,
-                fontWeight: FontWeight.w400,
               ),
             ),
           ),
@@ -60,10 +61,9 @@ class MyPersonalInfoWidget extends StatelessWidget {
             alignment: alignment,
             child: Text(
               "Valentim Gentil - São Paulo",
-              style: GoogleFonts.roboto(
+              style: GoogleFonts.lato(
                 color: Colors.black,
                 fontSize: 18,
-                fontWeight: FontWeight.w400,
               ),
             ),
           ),
@@ -73,10 +73,9 @@ class MyPersonalInfoWidget extends StatelessWidget {
             alignment: alignment,
             child: Text(
               "herrisonf_nascimento@hotmail.com",
-              style: GoogleFonts.roboto(
+              style: GoogleFonts.lato(
                 color: Colors.black,
                 fontSize: 18,
-                fontWeight: FontWeight.w400,
               ),
             ),
           ),

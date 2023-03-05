@@ -8,28 +8,35 @@ class IntroductionResumeComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+      margin: const EdgeInsets.symmetric(horizontal: 5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
-        color: Colors.lightBlueAccent.shade100,
+        color: Colors.white,
+        boxShadow: const [
+          BoxShadow(
+              color: Colors.black12,
+              offset: Offset(2, 2),
+            blurRadius: 2
+          ),
+        ],
       ),
       child: Column(
         children: [
           Text(
-            "Iniciei minha carreira como desenvolvedor Delphi, criando soluções para automação e trabalhando em refatorações e vivências em Backend. Meu foco atual é a especialização na plataforma Mobile. ",
+            "Iniciei minha carreira como desenvolvedor Delphi, criando soluções para automação e refatorações com vivências em Backend. Meu foco atual é a especialização na plataforma Mobile. Já conto com experiência"
+            "em liderança de equipes, arquitetura de softwares mobile e prototipação de aplicações para cliente final.",
             textAlign: TextAlign.justify,
-            style: GoogleFonts.mukta(
+            style: GoogleFonts.lato(
               fontSize: 20,
-              fontWeight: FontWeight.w400,
             ),
           ),
           const SizedBox(
             height: 20,
           ),
           Text(
-            "Outros conhecimentos: React; Firebase, MVC, MVVP, MVP e Clean architecture; Jenkins; Práticas Clean Code; Git/Flow, SCRUM, JIRA, LT. ",
-            style: GoogleFonts.mukta(
+            "Outros conhecimentos: React; Firebase, MVC, MVVP, MVP e Clean architecture; Jenkins; Figma; Clean Code; Git/Flow, SCRUM, JIRA, LT. ",
+            style: GoogleFonts.lato(
               fontSize: 20,
-              fontWeight: FontWeight.w400,
             ),
           ),
           const SizedBox(
@@ -37,7 +44,7 @@ class IntroductionResumeComponent extends StatelessWidget {
           ),
           Text(
             "Alguns projetos em que participei: ",
-            style: GoogleFonts.mukta(
+            style: GoogleFonts.lato(
               fontSize: 22,
               fontWeight: FontWeight.w500,
             ),
@@ -53,9 +60,8 @@ class IntroductionResumeComponent extends StatelessWidget {
             "- Portal LGPD(Claro, React) - Accurate Software \n "
             "- Migração regionalizador OI(OI, Oracle Infrastructure Cloud) - Accurate Software \n "
             "- Integração CIP(CIP, Oracle Cloud) - Accurate Software, \n entre outros. ",
-            style: GoogleFonts.mukta(
+            style: GoogleFonts.lato(
               fontSize: 20,
-              fontWeight: FontWeight.w400,
             ),
           ),
           const SizedBox(
@@ -63,9 +69,9 @@ class IntroductionResumeComponent extends StatelessWidget {
           ),
           Text(
             "Minha perspectiva para o futuro é o aprimoramento do meu conhecimento em mobile, qualidade e arquitetura.",
-            style: GoogleFonts.mukta(
+            style: GoogleFonts.lato(
               fontSize: 20,
-              fontWeight: FontWeight.w700,
+              fontWeight: FontWeight.w600
             ),
           ),
         ],

@@ -32,7 +32,7 @@ class MySocialMediaWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: margin ? 20 : 0),
+      margin: const EdgeInsets.symmetric(vertical: 20),
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.ROW,
         rowMainAxisAlignment:
@@ -52,7 +52,7 @@ class MySocialMediaWidget extends StatelessWidget {
           ),
           ResponsiveRowColumnItem(
             child: Container(
-              margin: EdgeInsets.only(left: margin ? 10 : 0),
+              margin: const EdgeInsets.only(left: 10),
               child: IconButton(
                 onPressed: () {
                   githubCallback();

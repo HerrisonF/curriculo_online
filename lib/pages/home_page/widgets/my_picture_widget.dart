@@ -15,12 +15,18 @@ class MyPictureWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(20),
-      height: height,
-      width: width,
-      child: ClipRRect(
+      decoration: BoxDecoration(
+        color: Colors.black,
         borderRadius: BorderRadius.circular(borderRadius),
-        child: Image.asset("assets/images/foto.png"),
+      ),
+      height: height,
+      width: height,
+      child: Container(
+        margin: const EdgeInsets.all(4),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(borderRadius),
+          child: Image.asset("assets/images/foto.png"),
+        ),
       ),
     );
   }

@@ -20,26 +20,39 @@ class HeaderHorizontalComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
+            Colors.white,
+            Colors.lightBlueAccent,
             Colors.lightBlueAccent,
             Colors.lightBlueAccent.shade400,
-            Colors.lightBlueAccent.shade700,
           ],
         ),
         borderRadius: BorderRadius.circular(8),
+        color: Colors.white,
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.black12,
+            offset: Offset(2, 2),
+            blurRadius: 2,
+          ),
+        ],
       ),
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.ROW,
         children: [
-          const ResponsiveRowColumnItem(
-            child: MyPictureWidget(
-              height: 200,
-              width: 200,
-              borderRadius: 8,
+           ResponsiveRowColumnItem(
+            child: Container(
+              margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+              child: const MyPictureWidget(
+                height: 250,
+                width: 250,
+                borderRadius: 8,
+              ),
             ),
           ),
           ResponsiveRowColumnItem(

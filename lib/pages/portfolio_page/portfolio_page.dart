@@ -35,25 +35,39 @@ class _PortfolioPageState extends State<PortfolioPage> {
               padding: const EdgeInsets.only(top: 50),
               height: 100,
               child: InkWell(
-                onTap: (){
+                onTap: () {
                   portfolioController.goBack(context);
                 },
                 overlayColor: MaterialStateColor.resolveWith(
-                      (states) => Colors.transparent,
+                  (states) => Colors.transparent,
                 ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.arrow_back),
-                    Container(
-                      margin: const EdgeInsets.only(left: 5),
-                      child: const Text(
-                        "Voltar",
-                        style: TextStyle(color: Colors.black, fontSize: 20),
-                      ),
+                child: Container(
+                  margin: const EdgeInsets.only(left: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(
+                      color: Colors.black,
                     ),
-                  ],
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      Icon(
+                        Icons.arrow_back,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        "Voltar",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -65,8 +79,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
               child: ValueListenableBuilder(
                 valueListenable: portfolioController.portfolioFull,
                 builder: (context, portfolio, widget) {
-                  return
-                    portfolio.portfolios.isEmpty
+                  return portfolio.portfolios.isEmpty
                       ? _shimmerLoading()
                       : _portfolioGrid(portfolio);
                 },

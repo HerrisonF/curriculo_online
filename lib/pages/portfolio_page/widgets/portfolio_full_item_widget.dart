@@ -17,8 +17,9 @@ class PortfolioFullItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: Colors.blue.shade50, borderRadius: BorderRadius.circular(8)),
-      height: 600,
+        color: Colors.blue.shade50,
+        borderRadius: BorderRadius.circular(8),
+      ),
       width: MediaQuery.of(context).size.width,
       margin: const EdgeInsets.symmetric(vertical: 20),
       padding: const EdgeInsets.all(10),
@@ -38,36 +39,31 @@ class PortfolioFullItemWidget extends StatelessWidget {
             ),
           ),
           ResponsiveRowColumnItem(
-            child: ResponsiveRowColumn(
-              layout: ResponsiveRowColumnType.ROW,
-              children: [
-                ResponsiveRowColumnItem(
-                  rowFlex: 1,
-                  child: Container(
-                    margin: const EdgeInsets.only(left: 20, right: 20),
-                    child: Text(
-                      portfolio.description,
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.mukta(
-                        fontSize: 20,
-                      ),
-                    ),
+            rowFlex: 1,
+            child: Container(
+              margin: const EdgeInsets.only(left: 20, right: 20),
+              child: Expanded(
+                child: Text(
+                  portfolio.description,
+                  textAlign: TextAlign.justify,
+                  style: GoogleFonts.mukta(
+                    fontSize: 20,
                   ),
                 ),
-                ResponsiveRowColumnItem(
-                  rowFlex: 2,
-                  child: CarouselSlider(
-                    options: CarouselOptions(height: 400.0),
-                    items: portfolio.images.map((i) {
-                      return Builder(
-                        builder: (BuildContext context) {
-                          return Image.asset(i);
-                        },
-                      );
-                    }).toList(),
-                  ),
-                ),
-              ],
+              ),
+            ),
+          ),
+          ResponsiveRowColumnItem(
+            rowFlex: 2,
+            child: CarouselSlider(
+              options: CarouselOptions(height: 400.0),
+              items: portfolio.images.map((i) {
+                return Builder(
+                  builder: (BuildContext context) {
+                    return Image.asset(i);
+                  },
+                );
+              }).toList(),
             ),
           ),
           ResponsiveRowColumnItem(child: _buttonSeeMore()),
@@ -84,7 +80,7 @@ class PortfolioFullItemWidget extends StatelessWidget {
       child: Container(
         height: 55,
         decoration: BoxDecoration(
-          color: Colors.cyanAccent,
+          color: Colors.blue,
           borderRadius: BorderRadius.circular(8),
         ),
         alignment: Alignment.center,
@@ -96,9 +92,7 @@ class PortfolioFullItemWidget extends StatelessWidget {
         child: const Text(
           "Ir ao site",
           style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w600,
-          ),
+              fontSize: 18, fontWeight: FontWeight.w600, color: Colors.white),
         ),
       ),
     );

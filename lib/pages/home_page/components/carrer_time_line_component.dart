@@ -36,7 +36,7 @@ class _CarrerTimeLineComponentState extends State<CarrerTimeLineComponent> {
                 "Experiência",
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
-                  fontSize: 25,
+                  fontSize: 30,
                 ),
               ),
             ),
@@ -71,8 +71,8 @@ class _CarrerTimeLineComponentState extends State<CarrerTimeLineComponent> {
             height: 40,
             indicator: _indicator(carrerFull.items[index].iconCode),
           ),
-          beforeLineStyle: LineStyle(
-            color: Colors.blue.shade300,
+          beforeLineStyle: const LineStyle(
+            color: Colors.black,
           ),
           endChild: CarrerItemWidget(
             carrerItem: carrerFull.items[index],
@@ -100,21 +100,13 @@ class _CarrerTimeLineComponentState extends State<CarrerTimeLineComponent> {
   Widget _indicator(int iconCode) {
     return Container(
       decoration: const BoxDecoration(
+        color: Colors.black,
         shape: BoxShape.circle,
         border: Border.fromBorderSide(
           BorderSide(
-            color: Colors.blue,
-            width: 4,
+            color: Colors.black,
+            width: 3,
           ),
-        ),
-      ),
-      child: Container(
-        decoration: const BoxDecoration(
-          shape: BoxShape.circle,
-          color: Colors.blue,
-        ),
-        child: Icon(
-          IconData(iconCode, fontFamily: 'MaterialIcons'),
         ),
       ),
     );

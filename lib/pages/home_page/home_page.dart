@@ -19,22 +19,47 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-        child: ListView(
-          children: [
-            _homeHeader(),
-            _homeContent(),
-            const SizedBox(
-              height: 50,
+      body: ListView(
+        children: [
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: _homeHeader(),
+          ),
+          Container(
+            margin: const EdgeInsets.only(left: 20,right: 20, top: 10),
+            child: _homeContent(),
+          ),
+          const SizedBox(
+            height: 50,
+          ),
+          Container(
+            margin: const EdgeInsets.only(left: 20, right: 20),
+            child: _homePortfolio(),
+          ),
+          const SizedBox(
+            height: 50,
+          ),
+          Container(
+            margin: const EdgeInsets.only(left: 20, right: 20),
+            child: _homeCarrerTimelineContent(),
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(8),
+                topRight: Radius.circular(8),
+              ),
             ),
-            _homePortfolio(),
-            const SizedBox(
-              height: 50,
+            height: 100,
+            child: const Center(
+              child: Text(
+                "Herrison Féres",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
-            _homeCarrerTimelineContent(),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -112,8 +137,6 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _homeCarrerTimelineContent() {
-    return Container(
-      child: const CarrerTimeLineComponent(),
-    );
+    return const CarrerTimeLineComponent();
   }
 }

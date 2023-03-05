@@ -17,11 +17,18 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 15, top: 10, bottom: 10),
+      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
       padding: const EdgeInsets.only(top: 30),
       decoration: BoxDecoration(
         color: Colors.blue.shade50,
         borderRadius: BorderRadius.circular(8),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.black12,
+            offset: Offset(2,2),
+            blurRadius: 4,
+          )
+        ],
       ),
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.ROW,
@@ -34,7 +41,7 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
                   margin: const EdgeInsets.only(left: 10),
                   child: Text(
                     widget.carrerItem.duration,
-                    style: GoogleFonts.mukta(
+                    style: GoogleFonts.lato(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
@@ -56,7 +63,7 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
                       child: Text(
                         widget.carrerItem.title,
                         textAlign: TextAlign.center,
-                        style: GoogleFonts.mukta(
+                        style: GoogleFonts.lato(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
                         ),
@@ -69,7 +76,7 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
                       child: Text(
                         widget.carrerItem.subTitle,
                         textAlign: TextAlign.center,
-                        style: GoogleFonts.mukta(fontSize: 22),
+                        style: GoogleFonts.lato(fontSize: 22),
                       ),
                     ),
                   ),
@@ -80,7 +87,7 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
                       alignment: Alignment.centerLeft,
                       child: Text(
                         widget.carrerItem.description,
-                        style: GoogleFonts.mukta(fontSize: 20),
+                        style: GoogleFonts.lato(fontSize: 20),
                       ),
                     ),
                   ),

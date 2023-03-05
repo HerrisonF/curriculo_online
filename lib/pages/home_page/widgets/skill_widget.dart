@@ -8,7 +8,6 @@ class SkillWidget extends StatelessWidget {
   final String levelText;
   final IconData? icon;
   final String imageAssetPath;
-  final Color color;
 
   const SkillWidget({
     Key? key,
@@ -17,7 +16,6 @@ class SkillWidget extends StatelessWidget {
     this.levelText = "",
     this.icon,
     this.imageAssetPath = "",
-    this.color = Colors.lightBlueAccent,
   }) : super(key: key);
 
   @override
@@ -26,8 +24,15 @@ class SkillWidget extends StatelessWidget {
       width: 120,
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: color,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(8),
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.black12,
+            offset: Offset(2, 2),
+            blurRadius: 2,
+          ),
+        ],
       ),
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.COLUMN,
@@ -47,7 +52,7 @@ class SkillWidget extends StatelessWidget {
               child: icon != null
                   ? Icon(
                       icon,
-                size: 50,
+                      size: 50,
                     )
                   : Image.asset(
                       imageAssetPath,
@@ -62,7 +67,7 @@ class SkillWidget extends StatelessWidget {
                     percent: level,
                     center: Text(levelText),
                     progressColor: Colors.amber,
-                    lineHeight: 15,
+                    lineHeight: 20,
                   ),
                 )
               : ResponsiveRowColumnItem(

@@ -1,6 +1,7 @@
 import 'package:curriculo_online/pages/home_page/widgets/skill_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class SkillsResumeComponent extends StatelessWidget {
@@ -25,48 +26,51 @@ class SkillsResumeComponent extends StatelessWidget {
         children: [
           ResponsiveRowColumnItem(
             child: Container(
-              padding: const EdgeInsets.only(bottom: 10),
-              child: const Text(
-                "Skills Principais",
-                style: TextStyle(
+              padding: const EdgeInsets.symmetric(vertical: 20),
+              child: Text(
+                "Habilidades Principais",
+                style: GoogleFonts.lato(
                   fontSize: 22,
                 ),
               ),
             ),
           ),
           ResponsiveRowColumnItem(
-            child: ResponsiveRowColumn(
-              layout: ResponsiveRowColumnType.ROW,
-              rowMainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const ResponsiveRowColumnItem(
-                  rowFit: FlexFit.tight,
-                  child: SkillWidget(
-                    title: "Flutter",
-                    levelText: "Sênior",
-                    icon: Icons.flutter_dash,
-                  ),
-                ),
-                ResponsiveRowColumnItem(
-                  rowFit: FlexFit.tight,
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 10),
-                    child: const SkillWidget(
-                      title: "Android",
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 5),
+              child: ResponsiveRowColumn(
+                layout: ResponsiveRowColumnType.ROW,
+                rowMainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const ResponsiveRowColumnItem(
+                    rowFit: FlexFit.tight,
+                    child: SkillWidget(
+                      title: "Flutter",
                       levelText: "Sênior",
-                      icon: Icons.android_outlined,
+                      icon: Icons.flutter_dash,
                     ),
                   ),
-                ),
-                const ResponsiveRowColumnItem(
-                  rowFit: FlexFit.tight,
-                  child: SkillWidget(
-                    title: "IOS",
-                    levelText: "Pleno",
-                    icon: Icons.apple_outlined,
+                  ResponsiveRowColumnItem(
+                    rowFit: FlexFit.tight,
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 10),
+                      child: const SkillWidget(
+                        title: "Android",
+                        levelText: "Sênior",
+                        icon: Icons.android_outlined,
+                      ),
+                    ),
                   ),
-                )
-              ],
+                  const ResponsiveRowColumnItem(
+                    rowFit: FlexFit.tight,
+                    child: SkillWidget(
+                      title: "IOS",
+                      levelText: "Pleno",
+                      icon: Icons.apple_outlined,
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
         ],
@@ -81,42 +85,45 @@ class SkillsResumeComponent extends StatelessWidget {
         children: [
           ResponsiveRowColumnItem(
             child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              child: const Text(
-                "Skills Secundárias",
-                style: TextStyle(
-                  fontSize: 20,
+              padding: const EdgeInsets.symmetric(vertical: 20),
+              child: Text(
+                "Habilidades Secundárias",
+                style: GoogleFonts.lato(
+                  fontSize: 22,
                 ),
               ),
             ),
           ),
           ResponsiveRowColumnItem(
-            child: ResponsiveRowColumn(
-              layout: ResponsiveRowColumnType.ROW,
-              children: [
-                ResponsiveRowColumnItem(
-                  rowFit: FlexFit.tight,
-                  child: Container(
-                    margin: const EdgeInsets.only(right: 5),
-                    child: const SkillWidget(
-                      title: "Java",
-                      levelText: "Pleno",
-                      icon: FontAwesomeIcons.java,
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 5),
+              child: ResponsiveRowColumn(
+                layout: ResponsiveRowColumnType.ROW,
+                children: [
+                  ResponsiveRowColumnItem(
+                    rowFit: FlexFit.tight,
+                    child: Container(
+                      margin: const EdgeInsets.only(right: 5),
+                      child: const SkillWidget(
+                        title: "Java",
+                        levelText: "Sênior",
+                        icon: FontAwesomeIcons.java,
+                      ),
                     ),
                   ),
-                ),
-                ResponsiveRowColumnItem(
-                  rowFit: FlexFit.tight,
-                  child: Container(
-                    margin: const EdgeInsets.only(left: 5),
-                    child: const SkillWidget(
-                      title: "React",
-                      levelText: "Pleno",
-                      icon: FontAwesomeIcons.react,
+                  ResponsiveRowColumnItem(
+                    rowFit: FlexFit.tight,
+                    child: Container(
+                      margin: const EdgeInsets.only(left: 5),
+                      child: const SkillWidget(
+                        title: "React",
+                        levelText: "Pleno",
+                        icon: FontAwesomeIcons.react,
+                      ),
                     ),
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
           )
         ],
@@ -141,41 +148,33 @@ class SkillsResumeComponent extends StatelessWidget {
             ),
           ),
           ResponsiveRowColumnItem(
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                color: Colors.greenAccent,
-              ),
-              child: ResponsiveRowColumn(
-                layout: ResponsiveRowColumnType.ROW,
-                rowMainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ResponsiveRowColumnItem(
-                    child: Container(
-                      margin: const EdgeInsets.only(right: 5),
-                      child: const SkillWidget(
-                        title: "Inglês",
-                        level: 0.6,
-                        levelText: "60%",
-                        imageAssetPath: "assets/images/languages/US.png",
-                        color: Colors.greenAccent,
-                      ),
+            child: ResponsiveRowColumn(
+              layout: ResponsiveRowColumnType.ROW,
+              rowMainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ResponsiveRowColumnItem(
+                  child: Container(
+                    margin: const EdgeInsets.only(right: 5),
+                    child: const SkillWidget(
+                      title: "Inglês",
+                      level: 0.6,
+                      levelText: "60%",
+                      imageAssetPath: "assets/images/languages/US.png",
                     ),
                   ),
-                  ResponsiveRowColumnItem(
-                    child: Container(
-                      margin: const EdgeInsets.only(left: 5),
-                      child: const SkillWidget(
-                        title: "Japonês",
-                        level: 0.01,
-                        levelText: "5%",
-                        imageAssetPath: "assets/images/languages/JP.png",
-                        color: Colors.greenAccent,
-                      ),
+                ),
+                ResponsiveRowColumnItem(
+                  child: Container(
+                    margin: const EdgeInsets.only(left: 5),
+                    child: const SkillWidget(
+                      title: "Japonês",
+                      level: 0.01,
+                      levelText: "5%",
+                      imageAssetPath: "assets/images/languages/JP.png",
                     ),
-                  )
-                ],
-              ),
+                  ),
+                )
+              ],
             ),
           )
         ],

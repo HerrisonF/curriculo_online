@@ -18,7 +18,7 @@ class PortfolioController {
 
   goBack(BuildContext context){
     if(context.canPop()){
-      context.pop();
+      context.go('/');
     }
   }
 

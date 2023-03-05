@@ -45,7 +45,7 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
                 "Portfólio",
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
-                  fontSize: 25,
+                  fontSize: 30,
                 ),
               ),
             ),
@@ -77,13 +77,13 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
 
   Widget _buttonSeeMore() {
     return Container(
-      height: 55,
+      height: 60,
       decoration: BoxDecoration(
-        color: Colors.cyanAccent,
+        color: Colors.lightBlueAccent.shade400,
         borderRadius: BorderRadius.circular(8),
       ),
       alignment: Alignment.center,
-      margin: const EdgeInsets.only(top: 20, left: 20, right: 20),
+      margin: const EdgeInsets.only(top: 20, left: 5, right: 5),
       padding: const EdgeInsets.symmetric(
         vertical: 5,
         horizontal: 20,
@@ -93,6 +93,7 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
         style: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w600,
+          color: Colors.white
         ),
       ),
     );
