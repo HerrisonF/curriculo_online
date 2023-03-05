@@ -39,34 +39,41 @@ class PortfolioFullItemWidget extends StatelessWidget {
             ),
           ),
           ResponsiveRowColumnItem(
-            rowFlex: 1,
             child: Container(
-              margin: const EdgeInsets.only(left: 20, right: 20),
-              child: Expanded(
-                child: Text(
-                  portfolio.description,
-                  textAlign: TextAlign.justify,
-                  style: GoogleFonts.mukta(
-                    fontSize: 20,
-                  ),
+              margin: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+              child: Text(
+                portfolio.description,
+                textAlign: TextAlign.justify,
+                style: GoogleFonts.mukta(
+                  fontSize: 20,
                 ),
               ),
             ),
           ),
           ResponsiveRowColumnItem(
-            rowFlex: 2,
-            child: CarouselSlider(
-              options: CarouselOptions(height: 400.0),
-              items: portfolio.images.map((i) {
-                return Builder(
-                  builder: (BuildContext context) {
-                    return Image.asset(i);
-                  },
-                );
-              }).toList(),
+            child: Container(
+              margin: const EdgeInsets.only(bottom: 20),
+              child: CarouselSlider(
+                options: CarouselOptions(height: 400.0),
+                items: portfolio.images.map((i) {
+                  return Builder(
+                    builder: (BuildContext context) {
+                      return Container(
+                        margin: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Image.asset(i, fit: BoxFit.fill),
+                      );
+                    },
+                  );
+                }).toList(),
+              ),
             ),
           ),
-          ResponsiveRowColumnItem(child: _buttonSeeMore()),
+          ResponsiveRowColumnItem(
+            child: Container(
+              margin: const EdgeInsets.only(bottom: 20),
+              child: _buttonSeeMore(),
+            ),
+          ),
         ],
       ),
     );
@@ -92,7 +99,10 @@ class PortfolioFullItemWidget extends StatelessWidget {
         child: const Text(
           "Ir ao site",
           style: TextStyle(
-              fontSize: 18, fontWeight: FontWeight.w600, color: Colors.white),
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+            color: Colors.white,
+          ),
         ),
       ),
     );
