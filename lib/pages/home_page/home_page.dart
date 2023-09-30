@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
             height: 100,
             child: Center(
               child: Text(
-                "Herrison Féres - Engenheiro Software",
+                "Herrison Féres - Engenheiro de software",
                 style: GoogleFonts.montserrat(
                   color: Colors.white,
                   fontSize: 20,

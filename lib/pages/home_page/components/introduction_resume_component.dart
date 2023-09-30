@@ -19,15 +19,16 @@ class IntroductionResumeComponent extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "Iniciei minha carreira com desenvolvimento Delphi, onde criei soluções "
+            " Iniciei minha carreira com desenvolvimento Delphi, onde criei soluções "
             "para automações comerciais, refatorando e tendo vivências em Backend. "
-            "Apesar do inicio, meu foco atual é plataforma Mobile. Na minha carreira, "
+            "Apesar do inicio, meu foco atual é a plataforma Mobile. \n Na minha carreira, "
             "já passei por empresas onde pude melhorar minhas habilidades pessoais, de desenvolvimento, "
             "tato ao cliente final e trabalho em equipe. Já tive também a oportunidade de experiênciar"
             "a liderança de uma equipe em um projeto. Em outras empresas, "
             "assumi a responsabilidade para criar arquiteturas de softwares "
-            "mobile e prototipações de aplicações para clientes finais. Nem todos os projetos que participei"
-            "estão aqui em imagens, pois se tratavam de aplicações mais internas que não vieram a público.",
+            "mobile e prototipações de aplicações para clientes finais. \n Nem todos os projetos que participei"
+            " estão aqui em imagens, pois se tratavam de aplicações mais internas que não vieram a público, "
+            "então opto por não expor.",
             textAlign: TextAlign.justify,
             style: GoogleFonts.montserrat(
               fontSize: 20,
