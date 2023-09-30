@@ -56,6 +56,7 @@ class HomePage extends StatelessWidget {
             child: Center(
               child: Text(
                 "Herrison Féres - Engenheiro de software",
+                textAlign: TextAlign.center,
                 style: GoogleFonts.montserrat(
                   color: Colors.white,
                   fontSize: 20,
