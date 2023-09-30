@@ -17,26 +17,19 @@ class PortfolioItemWidget extends StatelessWidget {
       hoverColor: MaterialStateColor.resolveWith(
             (states) => Colors.transparent,
       ),
+      borderRadius: BorderRadius.circular(4),
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          color: Colors.lightBlueAccent,
-          boxShadow: const [
-            BoxShadow(
-              color: Colors.black,
-              offset: Offset(0, 2),
-              blurRadius: 2,
-            ),
-          ],
+          borderRadius: BorderRadius.circular(4),
+          color: Colors.blue.shade50,
         ),
-        width: 250,
-        height: 250,
         padding: const EdgeInsets.all(10),
         margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(8),
           child: Image.asset(
             portfolio.images.first,
+            height: 200,
           ),
         ),
       ),

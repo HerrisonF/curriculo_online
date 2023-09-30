@@ -21,7 +21,6 @@ class HeaderVerticalComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 20),
       padding: const EdgeInsets.only(top: 20),
       width: double.infinity,
       decoration: BoxDecoration(
@@ -29,13 +28,15 @@ class HeaderVerticalComponent extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Colors.white,
-            Colors.lightBlueAccent,
-            Colors.lightBlueAccent,
+            Colors.lightBlueAccent.shade700,
             Colors.lightBlueAccent.shade400,
+            Colors.lightBlueAccent.shade200,
+            Colors.lightBlueAccent.shade100,
           ],
         ),
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: const BorderRadius.vertical(
+          top: Radius.circular(8),
+        ),
       ),
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.COLUMN,

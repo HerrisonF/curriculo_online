@@ -28,24 +28,31 @@ class PortfolioFullItemWidget extends StatelessWidget {
         children: [
           ResponsiveRowColumnItem(
             child: Container(
-              margin: const EdgeInsets.symmetric(
-                vertical: 20,
+              margin: const EdgeInsets.only(
+                top: 10,
+                bottom: 20,
               ),
               child: Text(
-                portfolio.title,
+                portfolio.title.toUpperCase(),
                 style: GoogleFonts.mukta(
-                    fontSize: 20, fontWeight: FontWeight.bold),
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
           ResponsiveRowColumnItem(
             child: Container(
-              margin: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+              margin: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                bottom: 20,
+              ),
               child: Text(
                 portfolio.description,
                 textAlign: TextAlign.justify,
                 style: GoogleFonts.mukta(
-                  fontSize: 20,
+                  fontSize: 18,
                 ),
               ),
             ),
@@ -60,7 +67,10 @@ class PortfolioFullItemWidget extends StatelessWidget {
                     builder: (BuildContext context) {
                       return Container(
                         margin: const EdgeInsets.symmetric(horizontal: 10),
-                        child: Image.asset(i, fit: BoxFit.fill),
+                        child: Image.asset(
+                          i,
+                          fit: BoxFit.contain,
+                        ),
                       );
                     },
                   );

@@ -16,29 +16,16 @@ class MyPersonalInfoWidget extends StatelessWidget {
       layout: ResponsiveRowColumnType.COLUMN,
       children: [
         ResponsiveRowColumnItem(
-          child: Align(
-            alignment: alignment,
-            child: Text(
-              "Herrison Féres",
-              style: GoogleFonts.baloo2(
-                color: Colors.white,
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-        ResponsiveRowColumnItem(
-          child: Align(
-            alignment: alignment,
-            child: Container(
-              margin: const EdgeInsets.only(top: 10),
+          child: Container(
+            margin: const EdgeInsets.only(top: 10),
+            child: Align(
+              alignment: alignment,
               child: Text(
-                "Mobile Software Engineer",
-                style: GoogleFonts.balooBhai2(
+                "Herrison Féres",
+                style: GoogleFonts.montserrat(
                   color: Colors.black,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w500,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
@@ -47,37 +34,37 @@ class MyPersonalInfoWidget extends StatelessWidget {
         ResponsiveRowColumnItem(
           child: Align(
             alignment: alignment,
-            child: Text(
-              "${DateUtil.howOldIam()} anos",
-              style: GoogleFonts.lato(
-                color: Colors.black,
-                fontSize: 18,
+            child: Container(
+              margin: const EdgeInsets.symmetric(vertical: 10),
+              child: FittedBox(
+                child: Text(
+                  "Engenheiro de Software Mobile".toUpperCase(),
+                  style: GoogleFonts.montserrat(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
               ),
             ),
           ),
         ),
         ResponsiveRowColumnItem(
-          child: Align(
-            alignment: alignment,
-            child: Text(
-              "Valentim Gentil - São Paulo",
-              style: GoogleFonts.lato(
-                color: Colors.black,
-                fontSize: 18,
+          child: Column(
+            children: [
+              ResponsiveRowColumnItem(
+                child: Align(
+                  alignment: alignment,
+                  child: Text(
+                    "${DateUtil.howOldIam()} anos",
+                    style: GoogleFonts.montserrat(
+                      color: Colors.black,
+                      fontSize: 16,
+                    ),
+                  ),
+                ),
               ),
-            ),
-          ),
-        ),
-        ResponsiveRowColumnItem(
-          child: Align(
-            alignment: alignment,
-            child: Text(
-              "herrisonf_nascimento@hotmail.com",
-              style: GoogleFonts.lato(
-                color: Colors.black,
-                fontSize: 18,
-              ),
-            ),
+            ],
           ),
         ),
       ],

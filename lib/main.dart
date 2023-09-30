@@ -1,6 +1,7 @@
 import 'package:curriculo_online/core/inject/inject.dart';
 import 'package:curriculo_online/core/routes/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
           const ResponsiveBreakpoint.resize(1024, name: DESKTOP),
         ],
       ),
-      routerConfig: Routes().initializerRoutes(),
+      routerConfig: GetIt.I<Routes>().goRouter,
     );
   }
 }

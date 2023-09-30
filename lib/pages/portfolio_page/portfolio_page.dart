@@ -32,8 +32,8 @@ class _PortfolioPageState extends State<PortfolioPage> {
         children: [
           ResponsiveRowColumnItem(
             child: Container(
-              padding: const EdgeInsets.only(top: 50),
-              height: 100,
+              margin: const EdgeInsets.only(top: 50, bottom: 10),
+              height: 60,
               child: InkWell(
                 onTap: () {
                   portfolioController.goBack(context);
@@ -43,24 +43,21 @@ class _PortfolioPageState extends State<PortfolioPage> {
                 ),
                 child: Container(
                   margin: const EdgeInsets.only(left: 5),
-                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 30),
                   decoration: BoxDecoration(
                     color: Colors.blue,
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(
-                      color: Colors.black,
-                    ),
+                    borderRadius: BorderRadius.circular(4),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       Icon(
-                        Icons.arrow_back,
+                        Icons.arrow_back_ios,
                         color: Colors.white,
+                        size: 20,
                       ),
                       Text(
-                        "Voltar",
+                        "VOLTAR",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
@@ -74,16 +71,13 @@ class _PortfolioPageState extends State<PortfolioPage> {
           ),
           ResponsiveRowColumnItem(
             columnFlex: 1,
-            child: Container(
-              margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-              child: ValueListenableBuilder(
-                valueListenable: portfolioController.portfolioFull,
-                builder: (context, portfolio, widget) {
-                  return portfolio.portfolios.isEmpty
-                      ? _shimmerLoading()
-                      : _portfolioGrid(portfolio);
-                },
-              ),
+            child: ValueListenableBuilder(
+              valueListenable: portfolioController.portfolioFull,
+              builder: (context, portfolio, widget) {
+                return portfolio.portfolios.isEmpty
+                    ? _shimmerLoading()
+                    : _portfolioGrid(portfolio);
+              },
             ),
           )
         ],
@@ -99,10 +93,9 @@ class _PortfolioPageState extends State<PortfolioPage> {
         height: 200,
         width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.all(10),
-        margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
         decoration: BoxDecoration(
           color: Colors.grey.shade300,
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(4),
         ),
       ),
     );

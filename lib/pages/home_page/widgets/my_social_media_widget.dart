@@ -20,6 +20,7 @@ class MySocialMediaWidget extends StatelessWidget {
   final bool margin;
 
   static const int _valueToEqualizeLinkedinAndGithubIconSize = 2;
+  static const Color iconColor = Colors.black;
 
   const MySocialMediaWidget({
     Key? key,
@@ -47,6 +48,7 @@ class MySocialMediaWidget extends StatelessWidget {
               icon: Icon(
                 FontAwesomeIcons.linkedin,
                 size: iconSize,
+                color: iconColor,
               ),
             ),
           ),
@@ -61,6 +63,7 @@ class MySocialMediaWidget extends StatelessWidget {
                 icon: Icon(
                   FontAwesomeIcons.github,
                   size: iconSize - _valueToEqualizeLinkedinAndGithubIconSize,
+                  color: iconColor,
                 ),
               ),
             ),

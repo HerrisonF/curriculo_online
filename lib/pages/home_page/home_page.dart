@@ -5,6 +5,7 @@ import 'package:curriculo_online/pages/home_page/components/skills_resume_compon
 import 'package:curriculo_online/pages/home_page/home_page_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 import 'components/header_vertical_component.dart';
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
             child: _homeHeader(),
           ),
           Container(
-            margin: const EdgeInsets.only(left: 20,right: 20, top: 10),
+            margin: const EdgeInsets.only(left: 20, right: 20, top: 10),
             child: _homeContent(),
           ),
           const SizedBox(
@@ -52,10 +53,14 @@ class HomePage extends StatelessWidget {
               ),
             ),
             height: 100,
-            child: const Center(
+            child: Center(
               child: Text(
-                "Herrison Féres",
-                style: TextStyle(color: Colors.white),
+                "Herrison Féres - Engenheiro Software",
+                style: GoogleFonts.montserrat(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
@@ -107,7 +112,7 @@ class HomePage extends StatelessWidget {
   }) {
     return [
       ResponsiveRowColumnItem(
-        rowFlex: isHorizontalOrientation ? 1 : 0,
+        rowFlex: isHorizontalOrientation ? 2 : 0,
         child: Container(
           constraints: BoxConstraints(
             minHeight: isHorizontalOrientation ? 410 : 0,

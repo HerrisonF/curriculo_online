@@ -17,13 +17,12 @@ dependencies:
   go_router: ^5.2.0
   get_it: ^7.2.0
   responsive_framework: ^0.2.0
-  google_fonts: ^3.0.1
+  google_fonts: ^4.0.1
   url_launcher: ^6.1.7
   flutter_html: ^2.2.1
   shimmer: ^2.0.0
   carousel_slider: ^4.2.1
   timeline_tile: ^2.0.0
-  percent_indicator: ^4.2.2
 
 dev_dependencies:
   flutter_test:
@@ -38,8 +37,6 @@ flutter:
   assets:
     - assets/
     - assets/images/foto.png
-    - assets/images/languages/US.png
-    - assets/images/languages/JP.png
     - assets/images/projetos/cip/
     - assets/images/projetos/claro-lgpd/
     - assets/images/projetos/leagueOfLegends/

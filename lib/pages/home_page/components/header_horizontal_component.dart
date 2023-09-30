@@ -23,24 +23,15 @@ class HeaderHorizontalComponent extends StatelessWidget {
 
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
           colors: [
-            Colors.white,
-            Colors.lightBlueAccent,
-            Colors.lightBlueAccent,
+            Colors.lightBlueAccent.shade700,
             Colors.lightBlueAccent.shade400,
+            Colors.lightBlueAccent.shade200,
+            Colors.lightBlueAccent.shade100,
           ],
         ),
         borderRadius: BorderRadius.circular(8),
         color: Colors.white,
-        boxShadow: const [
-          BoxShadow(
-            color: Colors.black12,
-            offset: Offset(2, 2),
-            blurRadius: 2,
-          ),
-        ],
       ),
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.ROW,
@@ -51,7 +42,7 @@ class HeaderHorizontalComponent extends StatelessWidget {
               child: const MyPictureWidget(
                 height: 250,
                 width: 250,
-                borderRadius: 8,
+                borderRadius: 4,
               ),
             ),
           ),

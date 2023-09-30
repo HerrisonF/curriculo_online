@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/linear_percent_indicator.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class SkillWidget extends StatelessWidget {
   final String title;
-  final double level;
-  final String levelText;
+  final List<int> level;
   final IconData? icon;
-  final String imageAssetPath;
 
   const SkillWidget({
     Key? key,
     this.title = "",
-    this.level = 0,
-    this.levelText = "",
-    this.icon,
-    this.imageAssetPath = "",
+    this.level = const [],
+    required this.icon,
   }) : super(key: key);
 
   @override
@@ -24,15 +20,14 @@ class SkillWidget extends StatelessWidget {
       width: 120,
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: Colors.white,
+        gradient: LinearGradient(
+          colors: [
+            Colors.lightBlueAccent.shade200,
+            Colors.lightBlue.shade400,
+            Colors.lightBlueAccent.shade200,
+          ],
+        ),
         borderRadius: BorderRadius.circular(8),
-        boxShadow: const [
-          BoxShadow(
-            color: Colors.black12,
-            offset: Offset(2, 2),
-            blurRadius: 2,
-          ),
-        ],
       ),
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.COLUMN,
@@ -41,44 +36,37 @@ class SkillWidget extends StatelessWidget {
           ResponsiveRowColumnItem(
             child: Text(
               title,
-              style: const TextStyle(
-                fontSize: 18,
+              style: GoogleFonts.montserrat(
+                fontSize: 14,
+                color: Colors.white,
+                fontWeight: FontWeight.w500
               ),
             ),
           ),
           ResponsiveRowColumnItem(
             child: Container(
               margin: const EdgeInsets.all(10),
-              child: icon != null
-                  ? Icon(
-                      icon,
-                      size: 50,
-                    )
-                  : Image.asset(
-                      imageAssetPath,
-                      width: 40,
-                      height: 40,
-                    ),
+              child: Icon(
+                icon,
+                size: 30,
+                color: Colors.black,
+              ),
             ),
           ),
-          level > 0
-              ? ResponsiveRowColumnItem(
-                  child: LinearPercentIndicator(
-                    percent: level,
-                    center: Text(levelText),
-                    progressColor: Colors.amber,
-                    lineHeight: 20,
-                  ),
-                )
-              : ResponsiveRowColumnItem(
-                  child: Text(
-                    levelText,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 18,
-                    ),
-                  ),
-                ),
+          ResponsiveRowColumnItem(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Row(
+                children: level
+                    .map((e) => const Icon(
+                          Icons.star,
+                          color: Colors.yellow,
+                          size: 20,
+                        ))
+                    .toList(),
+              ),
+            ),
+          )
         ],
       ),
     );

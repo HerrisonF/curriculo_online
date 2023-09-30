@@ -25,7 +25,7 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
         boxShadow: const [
           BoxShadow(
             color: Colors.black12,
-            offset: Offset(2,2),
+            offset: Offset(2, 2),
             blurRadius: 4,
           )
         ],
@@ -33,23 +33,6 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.ROW,
         children: [
-          ResponsiveRowColumnItem(
-            rowFlex: 2,
-            child: ResponsiveRowColumnItem(
-              child: Center(
-                child: Container(
-                  margin: const EdgeInsets.only(left: 10),
-                  child: Text(
-                    widget.carrerItem.duration,
-                    style: GoogleFonts.lato(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
           ResponsiveRowColumnItem(
             rowFlex: 10,
             child: Container(
@@ -61,10 +44,9 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
                     child: Container(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        widget.carrerItem.title,
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.lato(
-                          fontSize: 24,
+                        widget.carrerItem.title.toUpperCase(),
+                        style: GoogleFonts.montserrat(
+                          fontSize: 22,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -74,9 +56,25 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
                     child: Container(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        widget.carrerItem.subTitle,
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.lato(fontSize: 22),
+                        widget.carrerItem.subTitle.toUpperCase(),
+                        style: GoogleFonts.montserrat(fontSize: 16),
+                      ),
+                    ),
+                  ),
+                  ResponsiveRowColumnItem(
+                    child: Center(
+                      child: Container(
+                        alignment: Alignment.centerLeft,
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: Text(
+                            widget.carrerItem.duration,
+                            style: GoogleFonts.montserrat(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ),
@@ -87,7 +85,10 @@ class _CarrerItemWidgetState extends State<CarrerItemWidget> {
                       alignment: Alignment.centerLeft,
                       child: Text(
                         widget.carrerItem.description,
-                        style: GoogleFonts.lato(fontSize: 20),
+                        style: GoogleFonts.montserrat(
+                          fontSize: 14,
+                        ),
+                        textAlign: TextAlign.justify,
                       ),
                     ),
                   ),

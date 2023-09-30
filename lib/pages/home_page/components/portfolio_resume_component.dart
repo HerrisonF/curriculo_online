@@ -4,6 +4,7 @@ import 'package:curriculo_online/pages/home_page/widgets/portfolio_item_widget.d
 import 'package:curriculo_online/pages/home_page/widgets/shimmer_loading_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class PortfolioResumeComponent extends StatefulWidget {
@@ -42,7 +43,7 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
             child: Container(
               margin: const EdgeInsets.only(top: 20, bottom: 10),
               child: const Text(
-                "Portfólio",
+                "- PORTFÓLIO - ",
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
                   fontSize: 30,
@@ -54,7 +55,7 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
             columnFlex: 10,
             child: ValueListenableBuilder(
               valueListenable: homePageController.portolioResumed,
-              builder: (context, portfolio, widget) {
+              builder: (context, portfolio, _) {
                 return portfolio.portfolioResumes.isEmpty
                     ? _shimmerLoading()
                     : _portfolioGrid(portfolio);
@@ -79,8 +80,8 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
     return Container(
       height: 60,
       decoration: BoxDecoration(
-        color: Colors.lightBlueAccent.shade400,
-        borderRadius: BorderRadius.circular(8),
+        color: Colors.blue,
+        borderRadius: BorderRadius.circular(4),
       ),
       alignment: Alignment.center,
       margin: const EdgeInsets.only(top: 20, left: 5, right: 5),
@@ -88,9 +89,9 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
         vertical: 5,
         horizontal: 20,
       ),
-      child: const Text(
+      child: Text(
         "Ver mais projetos e detalhes",
-        style: TextStyle(
+        style: GoogleFonts.montserrat(
           fontSize: 18,
           fontWeight: FontWeight.w600,
           color: Colors.white
@@ -109,8 +110,8 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
     return ResponsiveGridView.builder(
       itemCount: portfolio.portfolioResumes.length,
       gridDelegate: const ResponsiveGridDelegate(
-        maxCrossAxisExtent: 500,
-        minCrossAxisExtent: 400,
+        maxCrossAxisExtent: 400,
+        minCrossAxisExtent: 300,
       ),
       itemBuilder: (context, index) {
         return PortfolioItemWidget(
@@ -135,8 +136,8 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
     return ShimmerLoadingWidget(
       howManyChilds: 3,
       child: Container(
-        width: 500,
-        height: 400,
+        width: 400,
+        height: 300,
         margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         decoration: BoxDecoration(
           color: Colors.grey.shade300,
