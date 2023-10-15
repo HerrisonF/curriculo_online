@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "title" : "Especialista Mobile",
+      "subTitle" : "TOTVS - RJ Consultores",
+      "description" : "- Home office em Empresa líder de vendas em passagens de ônibus na América Latina. Projetos white label, com grande grade de clientes customizados e outros projetos para controle administrativo e para pagamento.\n- Responsável pela manutenção, adição de novas features e ideias para melhoria do produto em geral. Construindo também, designs manuteníveis e escaláveis com atenção em nossa produtividade e qualidade para o aumento das notas das aplicações em loja, que se encontravam muito baixas. Com isso, tivemos grande retorno em qualidade e notas mais altas.\n- Uso do Figma para criar protótipos para clientes e designs. \n -Flutter MOBILE e WEB / android / iOS / Firebase / SDKS de pagamento / Plug-ins próprios / PIX / Nupay / SCRUM / JIRA / integração de redes sociais / refatoração do código para melhores práticas / desenvolvimento para máquinas de pagamento / SOLID / CICD / GraphQL / Testes automatizados",
+      "duration" : "2022 - Atual",
+      "iconCode" : "0xe6f2"
+    },
+    {
+      "title" : "Engenheiro de Software",
+      "subTitle" : "Avanade",
+      "description" : "Home Office em empresa joint venture entre Accenture e Microsoft.\n- Projeto: Hospital Israelita Albert Einstein, um dos maiores e mais importantes hospitais do Brasil.\n- Responsável pela manutenção e adição de novas features para automatização e melhora do serviço dos médicos.",
+      "duration" : "2021 - 2022",
+      "iconCode" : "0xe6f2"
+    },
+    {
+      "title" : "Analista de Sistemas / Desenvolvedor Mobile",
+      "subTitle" : "Accurate Software",
+      "description" : "Desenvolvimento Mobile, GIT, SCRUM, JIRA.\nLiderança técnica (equipe remota) atuei em Flutter na arquitetura e manutenção da engenharia proposta utilizando padrões como MobX para construção do novo aplicativo Mambo. Atuando também como SM. Aplicativo com nota abaixo de 3, foi elevado para 4.1+ após nosso trabalho.\nProjetos em que atuei (Apenas desenvolvedor).\n- Claro (App Meu Técnico): Android, Ionic, padrão MVVM e Clouds MCS(Oracle) e AWS(Amazon).\n- Consultor Oracle CIP com uso do Oracle Integration Cloud.\n- Migração OI de seu front e back do ambiente classic para um ambiente mais atualizado dentro da Oracle Cloud(OKE) com uso de docker e kubernetes.\n- Claro ( Portal LGPD ), React, HTML, CSS.",
+      "duration" : "2018 - 2021",
+      "iconCode" : "0xe6f2"
+    },
+    {
+      "title" : "Desenvolvedor Delphi",
+      "subTitle" : "HQ Softwares",
+      "description" : "Home-office em Análise de requisitos, MSS, Tortoise e Delphi.\nAtuava sozinho na tentativa de automatizar uma setor de pintura em uma fábrica de Guarulhos.",
+      "duration" : "2018 - 2018",
+      "iconCode" : "0xe6f2"
+    },
+    {
+      "title" : "Estágio Delphi",
+      "subTitle" : "Formatto Sistemas",
+      "description" : "Usava Delphi na área de automação Fiscal. Programação MVC e uso da POO.\nUtilização de práticas Clean Code. Uso de Git Flow, SQL e ETL. Noções de Padrões de Projeto , .ini e dlls.",
+      "duration" : "2017 - 2018",
+      "iconCode" : "0xe6f2"
+    },
+    {
+      "title" : "Estágio WEB",
+      "subTitle" : "Cadastrando WEB",
+      "description" : "Auxiliava na formatação de sites HTML, lojas virtuais, Wordpress, Hospedagem de Sites, Transferências FTP, mineração de palavras chaves, força da redundância das palavras chaves e cálculo de velocidade nas páginas.",
+      "duration" : "2017 - 2018",
+      "iconCode" : "0xe6f2"
+    },
+    {
+      "title" : "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo",
+      "subTitle" : "Analista de Sistemas",
+      "description" : "Graduação em Análise e desenvolvimento de sistemas. Congressos em que participei: Cotesi, Arduino Day, Latinoware.",
+      "duration" : "01/2016 - 12/2018",
+      "iconCode" : "0xf8b4"
+    },
+    {
+      "title" : "Almoxarife",
+      "subTitle" : "Tebarrot",
+      "description" : "Receber, despachar, controlar, armazenar e organizar mercadorias. Também reabastecia todos os setores da fábrica.",
+      "duration" : "2014 - 2015",
+      "iconCode" : "0xe6f2"
+    },
+    {
+      "title" : "Objetiva cursos profissionalizantes",
+      "subTitle" : "Gestão Empresarial",
+      "description" : "Módulos: Administração, Secretariado, Telemarketing, Administração de pessoal e Contabilidade.",
+      "duration" : "2015 - 2015",
+      "iconCode" : "0xf8b4"
+    },
+    {
+      "title" : "Escola Técnica Estadual",
+      "subTitle" : "Técnico em Informática para Internet",
+      "description" : "Desenvolvimento dos conhecimentos para ingresso no ambiente de TI. Hospedagem de sites, HTML, CSS, Design, Hardware.",
+      "duration" : "2012 - 2013",
+      "iconCode" : "0xf8b4"
+    }
+  ]
+}
