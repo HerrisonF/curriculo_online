@@ -2,17 +2,23 @@
     "projects": [
         {
             "title" : "Aplicativo White-Label",
-            "description" : "Desenvolvido para venda de passagens online. A aplicação se adapta por meio de parametrizações a cada tipo de usuário. Atuação em desenvolvimento de novas features, melhora no código, refatorações e propostas de novas ideias frente aos concorrentes. Tecs: Flutter, Modular e Firebase",
+            "description" : "Desenvolvido para venda de passagens online. A aplicação se adapta por meio de parametrizações a cada tipo de usuário. Atuação em desenvolvimento de novas features, melhora no código, refatorações e propostas de novas ideias frente aos concorrentes. As notas das aplicações foram recuperadas e hoje estão em grande parte acima de 4 estrelas.  Tecs: Flutter, Firebase",
             "images": [
                 "assets/images/projetos/mobileBus/mobileBus_1.png",
                 "assets/images/projetos/mobileBus/mobileBus_2.png",
-                "assets/images/projetos/mobileBus/mobileBus_3.png"
+                "assets/images/projetos/mobileBus/mobileBus_3.png",
+                "assets/images/projetos/mobileBus/mobileBus_4.png",
+                "assets/images/projetos/mobileBus/mobileBus_5.png",
+                "assets/images/projetos/mobileBus/mobileBus_6.png",
+                "assets/images/projetos/mobileBus/mobileBus_7.png",
+                "assets/images/projetos/mobileBus/mobileBus_8.png",
+                "assets/images/projetos/mobileBus/mobileBus_9.png"
             ],
             "link" : "https://play.google.com/store/apps/details?id=br.com.rjconsultores.rotatransportes&hl=pt_BR&gl=US"
         },
         {
             "title" : "Aplicativo de E-commerce",
-            "description" : "Desenvolvimento para o supermercado Mambo. Entramos para substituir um aplicativo IONIC com nota abaixo de 3, neste novo app, atuei como líder técnico no projeto após indicar a nova tecnologia do Flutter. Ali, trabalhei no desenvolvimento, escolha de prioridades, criação e delegação de tasks. Primeira versão em 5 meses, onde alcançamos uma nota inicial de 4.5! \n Tecs: Flutter, MOBX, GETIT.",
+            "description" : "Desenvolvimento para o supermercado Mambo. Entramos para substituir um aplicativo IONIC com nota abaixo de 3, neste novo app, atuei como líder técnico no projeto após indicar a nova tecnologia do Flutter. Ali, trabalhei no desenvolvimento, escolha de prioridades, criação e delegação de tasks. Primeira versão em 5 meses, onde alcançamos uma nota inicial de 4.5! \n Tecs: Flutter.",
             "images": [
                 "assets/images/projetos/mambo/mambo_1.png",
                 "assets/images/projetos/mambo/mambo_2.jpeg"
