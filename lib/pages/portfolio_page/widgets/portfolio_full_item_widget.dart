@@ -61,7 +61,10 @@ class PortfolioFullItemWidget extends StatelessWidget {
             child: Container(
               margin: const EdgeInsets.only(bottom: 20),
               child: CarouselSlider(
-                options: CarouselOptions(height: 400.0),
+                options: CarouselOptions(
+                  height: 400.0,
+                  autoPlay: true,
+                ),
                 items: portfolio.images.map((i) {
                   return Builder(
                     builder: (BuildContext context) {

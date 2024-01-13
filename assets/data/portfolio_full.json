@@ -10,9 +10,21 @@
                 "assets/images/projetos/mobileBus/mobileBus_4.png",
                 "assets/images/projetos/mobileBus/mobileBus_5.png",
                 "assets/images/projetos/mobileBus/mobileBus_6.png",
-                "assets/images/projetos/mobileBus/mobileBus_7.png"
+                "assets/images/projetos/mobileBus/mobileBus_7.png",
+                "assets/images/projetos/mobileBus/mobileBus_8.png"
             ],
             "link" : "https://play.google.com/store/apps/details?id=br.com.rjconsultores.rotatransportes&hl=pt_BR&gl=US"
+        },
+        {
+            "title" : "Aplicativo Espiritual",
+            "description" : "Primeira aplicação comercial freelance com alguns colegas. Nesse app trabalhei no desenvolvimento e estruturação da aplicação no front, enquanto outro colega atuava no back. Também contratamos uma terceira pessoa para desenhar a interface da aplicação e a logo. O app tem opções de pagamento, visualização de vídeos, perfis de membros e etc. Após a entrega, um dos colegas optou por suportar a aplicação com manutenções e atualizações. \n A Aplicação esta disponível, em Android e IOS.\n TECS: FLUTER, MOBX, GETIT.",
+            "images": [
+                "assets/images/projetos/fonteReiki/fonte_reiki_1.png",
+                "assets/images/projetos/fonteReiki/fonte_reiki_2.png",
+                "assets/images/projetos/fonteReiki/fonte_reiki_3.png",
+                "assets/images/projetos/fonteReiki/fonte_reiki_4.png"
+            ],
+            "link" : "https://apps.apple.com/br/app/fonte-reiki/id1632754325"
         },
         {
             "title" : "Aplicativo de E-commerce",
@@ -25,7 +37,7 @@
         },
         {
             "title" : "Watch Summoner",
-            "description" : "Aplicativo na lançado na Play Store, com o tema League Of Legends.  Na aplicação era possível ver informações do profile do jogador e jogadores com partida em andamento. Era uma aplicação de teste para arquiteturas e tecnologias. Desenvolvido em Flutter e com GETX e estruturas experimentais de arquiteturas como a arquitetura limpa, foi utilizado dados da Riot e os recursos do Data Dragon para as imagens. A aplicação foi descontinuada em 28/10/23.",
+            "description" : "Aplicativo na lançado na Play Store, com o tema League Of Legends.  Na aplicação era possível ver informações do profile do jogador e jogadores com partida em andamento. Era uma aplicação de teste para arquiteturas e tecnologias. Desenvolvido em Flutter e com GETX e estruturas experimentais de arquiteturas como a arquitetura limpa, foi utilizado dados da Riot e os recursos do Data Dragon para as imagens.",
             "images": [
                 "assets/images/projetos/leagueOfLegends/lol_1.png",
                 "assets/images/projetos/leagueOfLegends/lol_2.png",
