@@ -60,7 +60,9 @@ class IntroductionResumeComponent extends StatelessWidget {
             height: 20,
           ),
           Text(
-            "React - Firebase - MVC - MVVP - MVP - SOLID - Arquitetura Limpa - Jenkins; \nFigma - Clean Code - Git/Flow - SCRUM - JIRA - LT(Liderança Técnica). ",
+            "React - Firebase - MVC - MVVP - MVP - SOLID - Arquitetura Limpa - Jenkins; \n"
+            "Figma - Clean Code - Git/Flow - SCRUM - JIRA - LT(Liderança Técnica). \n"
+            "Design patterns - testes - MicroApps - GraphQL - MultiRepo - Payment SDKS",
             style: GoogleFonts.montserrat(
               fontSize: 18,
             ),
