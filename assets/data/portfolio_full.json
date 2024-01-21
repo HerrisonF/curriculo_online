@@ -37,12 +37,14 @@
         },
         {
             "title" : "Watch Summoner",
-            "description" : "Aplicativo na lançado na Play Store, com o tema League Of Legends.  Na aplicação era possível ver informações do profile do jogador e jogadores com partida em andamento. Era uma aplicação de teste para arquiteturas e tecnologias. Desenvolvido em Flutter e com GETX e estruturas experimentais de arquiteturas como a arquitetura limpa, foi utilizado dados da Riot e os recursos do Data Dragon para as imagens.",
+            "description" : "Aplicativo na lançado na Play Store, com o tema League Of Legends.  Na aplicação é possível ver informações do profile do jogador e partidas em andamento em duas linguas diferentes PT_BR e EN_US. Na aplicação é utlizada a clean architecture em Flutter, interface idealizada utilizando o figma e fazendo uso das novas estruturas de value notifier. Para construção da aplicação e cruzamento de dados, foi utilizado as informações da Riot e toda a estrutura disponível em: developer.riotgames.com. Também aproveitei recursos da comunidade Data Dragon para algumas imagens.",
             "images": [
                 "assets/images/projetos/leagueOfLegends/lol_1.png",
                 "assets/images/projetos/leagueOfLegends/lol_2.png",
                 "assets/images/projetos/leagueOfLegends/lol_3.png",
-                "assets/images/projetos/leagueOfLegends/lol_4.png"
+                "assets/images/projetos/leagueOfLegends/lol_4.png",
+                "assets/images/projetos/leagueOfLegends/lol_5.png",
+                "assets/images/projetos/leagueOfLegends/lol_6.png"
             ],
             "link" : "https://play.google.com/store/apps/details?id=com.herrison.legends_panel"
         },
