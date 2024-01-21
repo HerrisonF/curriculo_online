@@ -28,7 +28,7 @@
         },
         {
             "title" : "Aplicativo de E-commerce",
-            "description" : "Desenvolvimento para o supermercado Mambo. Entramos para substituir um aplicativo IONIC com nota abaixo de 3, neste novo app, atuei como líder técnico no projeto após indicar a nova tecnologia do Flutter. Ali, trabalhei no desenvolvimento, arquitetura, escolha de prioridades, criação e delegação de tasks. Nessa nova aplicação, recuperamos a nota do meso para 4.5! \n Tecs: Flutter, MOBX, GETIT.",
+            "description" : "Desenvolvimento para o supermercado Mambo. Entramos para substituir um aplicativo IONIC com nota abaixo de 3, neste novo app, atuei como líder técnico no projeto após indicar a nova tecnologia do Flutter. Ali, trabalhei no desenvolvimento, arquitetura, escolha de prioridades, criação e delegação de tasks. Nessa nova aplicação, recuperamos a nota do mesmo para 4.5! \n Tecs: Flutter, MOBX, GETIT.",
             "images": [
                 "assets/images/projetos/mambo/mambo_1.png",
                 "assets/images/projetos/mambo/mambo_2.jpeg"
@@ -37,7 +37,7 @@
         },
         {
             "title" : "Watch Summoner",
-            "description" : "Aplicativo na lançado na Play Store, com o tema League Of Legends.  Na aplicação é possível ver informações do profile do jogador e partidas em andamento em duas linguas diferentes PT_BR e EN_US. Na aplicação é utlizada a clean architecture em Flutter, interface idealizada utilizando o figma e fazendo uso das novas estruturas de value notifier. Para construção da aplicação e cruzamento de dados, foi utilizado as informações da Riot e toda a estrutura disponível em: developer.riotgames.com. Também aproveitei recursos da comunidade Data Dragon para algumas imagens.",
+            "description" : "Aplicativo pessoal lançado na Play Store, com o tema League Of Legends.  Na aplicação é possível ver informações do profile do jogador e partidas em andamento em duas linguas diferentes PT_BR e EN_US. Na aplicação é utlizada a clean architecture em Flutter, interface idealizada utilizando o figma e fazendo uso das novas estruturas de value notifier. Para construção da aplicação e cruzamento de dados, foi utilizado as informações da Riot e toda a estrutura disponível em: developer.riotgames.com. Também aproveitei recursos da comunidade Data Dragon para algumas imagens.",
             "images": [
                 "assets/images/projetos/leagueOfLegends/lol_1.png",
                 "assets/images/projetos/leagueOfLegends/lol_2.png",
