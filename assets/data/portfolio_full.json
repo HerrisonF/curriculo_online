@@ -28,7 +28,7 @@
         },
         {
             "title" : "Aplicativo de E-commerce",
-            "description" : "Desenvolvimento para o supermercado Mambo. Entramos para substituir um aplicativo IONIC com nota abaixo de 3, neste novo app, atuei como líder técnico no projeto após indicar a nova tecnologia do Flutter. Ali, trabalhei no desenvolvimento, escolha de prioridades, criação e delegação de tasks. Primeira versão em 5 meses, onde alcançamos uma nota inicial de 4.5! \n Tecs: Flutter, MOBX, GETIT.",
+            "description" : "Desenvolvimento para o supermercado Mambo. Entramos para substituir um aplicativo IONIC com nota abaixo de 3, neste novo app, atuei como líder técnico no projeto após indicar a nova tecnologia do Flutter. Ali, trabalhei no desenvolvimento, arquitetura, escolha de prioridades, criação e delegação de tasks. Nessa nova aplicação, recuperamos a nota do meso para 4.5! \n Tecs: Flutter, MOBX, GETIT.",
             "images": [
                 "assets/images/projetos/mambo/mambo_1.png",
                 "assets/images/projetos/mambo/mambo_2.jpeg"
