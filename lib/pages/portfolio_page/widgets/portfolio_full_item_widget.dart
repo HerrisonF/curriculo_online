@@ -1,9 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:curriculo_online/core/models/portfolio.dart';
+import 'package:curriculo_online/core/models/portfolio/portfolio.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'dart:html' as html;
+import 'package:url_launcher/url_launcher.dart';
 
 class PortfolioFullItemWidget extends StatelessWidget {
   final Portfolio portfolio;
@@ -94,8 +94,15 @@ class PortfolioFullItemWidget extends StatelessWidget {
 
   Widget _buttonSeeMore() {
     return InkWell(
-      onTap: () {
-        html.window.open(portfolio.link, "_blank");
+      onTap: () async {
+        final Uri url = Uri.parse(portfolio.link);
+        if (await canLaunchUrl(url)) {
+          await launchUrl(
+            url,
+            mode: LaunchMode.externalApplication, // abre fora do app
+            webOnlyWindowName: '_blank', // garante nova aba no web
+          );
+        }
       },
       child: Container(
         height: 55,

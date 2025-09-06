@@ -1,4 +1,4 @@
-import 'package:curriculo_online/core/models/carrer_item.dart';
+import 'package:curriculo_online/core/models/carreira/carrer_item.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';

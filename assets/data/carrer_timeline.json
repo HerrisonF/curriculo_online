@@ -1,23 +1,23 @@
 {
   "items": [
     {
-      "title" : "Especialista Mobile",
+      "title" : "Mobile Developer",
       "subTitle" : "TOTVS - RJ Consultores",
-      "description" : "- Home office em Empresa líder de vendas em passagens de ônibus na América Latina. Projetos white label, com grande grade de clientes customizados e outros projetos para controle administrativo e para pagamento.\n- Responsável pela manutenção, adição de novas features e ideias para melhoria do produto em geral. Construindo também, designs manuteníveis e escaláveis com atenção em nossa produtividade e qualidade para o aumento das notas das aplicações em loja, que se encontravam muito baixas. Com isso, tivemos grande retorno em qualidade e notas mais altas.\n- Uso do Figma para criar protótipos para clientes e designs. \n -Flutter MOBILE e WEB / android / iOS / Firebase / SDKS de pagamento / Plug-ins próprios / PIX / Nupay / SCRUM / JIRA / integração de redes sociais / refatoração do código para melhores práticas / desenvolvimento para máquinas de pagamento / SOLID / CICD / GraphQL / Testes automatizados",
+      "description" : "- Empresa líder de vendas em passagens de ônibus na América Latina. Projetos white label, nativos e em Flutter, com grande grade de clientes customizados e outros projetos para controle administrativo e pagamento.\n- Responsável pela manutenção, adição, teste de novas features e ideias para melhoria do produto em geral. Com uso do Figma e experiência em Flutter-Dart, construo designs manuteníveis e escaláveis, com atenção em nossa produtividade e qualidade para o aumento das notas das aplicações em loja. - Desenvolvimento de arquiteturas e definição de tecnologias para novos projetos.\n- Uso do Figma para criar protótipos para clientes e designs. \n -Flutter MOBILE e WEB / android / iOS / Firebase / SDKS de pagamento / Plug-ins próprios / PIX / Nupay / SCRUM / JIRA / integração de redes sociais / refatoração do código para melhores práticas / desenvolvimento para máquinas de pagamento / SOLID / CICD / GraphQL / Testes automatizados / Versionamento em lojas Apple & Play Store / Internacionalização de apps/ Câmera / notifications",
       "duration" : "2022 - Atual",
       "iconCode" : "0xe6f2"
     },
     {
-      "title" : "Engenheiro de Software",
+      "title" : "Mobile Developer",
       "subTitle" : "Avanade",
-      "description" : "Home Office em empresa joint venture entre Accenture e Microsoft.\n- Projeto: Hospital Israelita Albert Einstein, um dos maiores e mais importantes hospitais do Brasil.\n- Responsável pela manutenção e adição de novas features para automatização e melhora do serviço dos médicos.",
+      "description" : "Empresa joint venture entre Accenture e Microsoft.\n- Projeto: Hospital Israelita Albert Einstein, um dos maiores e mais importantes hospitais do Brasil.\n- Responsável pela manutenção e adição de novas features em Flutter(MicroApp) em aplicativo de gerência interna para automatização e melhora dos serviços médicos.",
       "duration" : "2021 - 2022",
       "iconCode" : "0xe6f2"
     },
     {
-      "title" : "Analista de Sistemas / Desenvolvedor Mobile",
+      "title" : "Analista de Sistemas - Full Stack",
       "subTitle" : "Accurate Software",
-      "description" : "Desenvolvimento Mobile, GIT, SCRUM, JIRA.\nLiderança técnica (equipe remota) atuei em Flutter na arquitetura e manutenção da engenharia proposta utilizando padrões como MobX para construção do novo aplicativo Mambo. Atuando também como SM. Aplicativo com nota abaixo de 3, foi elevado para 4.1+ após nosso trabalho.\nProjetos em que atuei (Apenas desenvolvedor).\n- Claro (App Meu Técnico): Android, Ionic, padrão MVVM e Clouds MCS(Oracle) e AWS(Amazon).\n- Consultor Oracle CIP com uso do Oracle Integration Cloud.\n- Migração OI de seu front e back do ambiente classic para um ambiente mais atualizado dentro da Oracle Cloud(OKE) com uso de docker e kubernetes.\n- Claro ( Portal LGPD ), React, HTML, CSS.",
+      "description" : "Desenvolvimento Mobile, GIT, SCRUM, JIRA.\nLiderança técnica (equipe remota) utilizando Flutter na arquitetura e manutenção da engenharia proposta utilizando padrões como MobX para construção do novo aplicativo. Atuando também como SM.\nProjetos em que atuei (Apenas desenvolvedor).\n- Claro (App Meu Técnico): Android, Ionic, padrão MVVM e Clouds MCS(Oracle) e AWS(Amazon).\n- Consultor Oracle CIP com uso do Oracle Integration Cloud.\n- Migração OI de seu front e back do ambiente classic para um ambiente mais atualizado dentro da Oracle Cloud(OKE) com uso de docker e kubernetes.\n- Claro ( Portal LGPD ), React, HTML, CSS.",
       "duration" : "2018 - 2021",
       "iconCode" : "0xe6f2"
     },
@@ -29,14 +29,14 @@
       "iconCode" : "0xe6f2"
     },
     {
-      "title" : "Estágio Delphi",
+      "title" : "Desenvolvedor Delphi - Estágio",
       "subTitle" : "Formatto Sistemas",
-      "description" : "Usava Delphi na área de automação Fiscal. Programação MVC e uso da POO.\nUtilização de práticas Clean Code. Uso de Git Flow, SQL e ETL. Noções de Padrões de Projeto , .ini e dlls.",
+      "description" : "Utilização Delphi na área de automação Fiscal. Programação MVC e uso da POO.\nUtilização de práticas Clean Code. Uso de Git Flow, SQL e ETL. Noções de Padrões de Projeto , .ini e dlls.",
       "duration" : "2017 - 2018",
       "iconCode" : "0xe6f2"
     },
     {
-      "title" : "Estágio WEB",
+      "title" : "Desenvolvedor WEB - Estágio",
       "subTitle" : "Cadastrando WEB",
       "description" : "Auxiliava na formatação de sites HTML, lojas virtuais, Wordpress, Hospedagem de Sites, Transferências FTP, mineração de palavras chaves, força da redundância das palavras chaves e cálculo de velocidade nas páginas.",
       "duration" : "2017 - 2018",

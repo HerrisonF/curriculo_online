@@ -1,4 +1,4 @@
-import 'package:curriculo_online/core/models/carrer_item.dart';
+import 'carrer_item.dart';
 
 class CarrerFull {
   List<CarrerItem> items = [];
@@ -6,7 +6,7 @@ class CarrerFull {
   CarrerFull();
 
   CarrerFull.fromJson(Map<String, dynamic> json) {
-    if(json["items"] != null){
+    if (json["items"] != null) {
       json["items"].forEach((element) {
         items.add(CarrerItem.fromJson(element));
       });

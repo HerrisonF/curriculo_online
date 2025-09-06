@@ -48,8 +48,12 @@ class HeaderVerticalComponent extends StatelessWidget {
               borderRadius: 100,
             ),
           ),
-          const ResponsiveRowColumnItem(
-            child: MyPersonalInfoWidget(alignment: Alignment.center),
+          ResponsiveRowColumnItem(
+            child: MyPersonalInfoWidget(
+              alignment: Alignment.center,
+              linkedinCallback: linkedinCallback,
+              githubCallback: githubCallback,
+            ),
           ),
           ResponsiveRowColumnItem(
             child: MySocialMediaWidget(

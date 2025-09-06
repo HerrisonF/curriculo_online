@@ -8,7 +8,6 @@ class IntroductionResumeComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
-      margin: const EdgeInsets.symmetric(horizontal: 5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4),
         color: Colors.white,
@@ -22,7 +21,7 @@ class IntroductionResumeComponent extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(bottom: 10),
             child: Text(
-              "HISTÓRIA",
+              "CARREIRA",
               textAlign: TextAlign.justify,
               style: GoogleFonts.montserrat(
                 fontSize: 22,
@@ -31,12 +30,14 @@ class IntroductionResumeComponent extends StatelessWidget {
             ),
           ),
           Text(
-            "Iniciei minha carreira com desenvolvimento Delphi, onde contribui para criar soluções "
-            "para automações comerciais, refatorando e tendo vivências em Backend. "
-            " Apesar do inicio, meu foco atual é a plataforma Mobile. \n Na minha carreira, "
-            "já passei por empresas onde pude melhorar minhas habilidades pessoais, desenvolvimento, "
-            "tato ao cliente final e trabalho em equipe. Já tive também a oportunidade de experiênciar"
-            "a liderança de uma equipe em um projeto. \n Em outras empresas, "
+            "Sou Analista de Sistemas e meu foco de carreira está no desenvolvimento de Software Mobile.\n"
+            "Como desenvolvedor mobile, tenho experiência em Android, Flutter, IOs. \n"
+            "Também tenho conhecimento em arquitetura de software para melhor "
+            "desenvolvimento, manutenção e escalabilidade. \n"
+            "Passei por empresas onde pude melhorar minhas habilidades pessoais, de desenvolvimento, "
+            "tato ao cliente final e trabalho em equipe. \n"
+            "Também já tive a oportunidade de experiênciar "
+            "a liderança de um time em um projeto. \n Em algumas empresas, "
             "assumi a responsabilidade para criar arquiteturas de softwares "
             "mobile e prototipações de aplicações para clientes finais. \n Nem todos os projetos que participei"
             "estão aqui em imagens, pois se tratavam de aplicações mais internas que não vieram a público em lojas, "
@@ -60,9 +61,10 @@ class IntroductionResumeComponent extends StatelessWidget {
             height: 20,
           ),
           Text(
-            "React - Firebase - MVC - MVVP - MVP - SOLID - Arquitetura Limpa - Jenkins; \n"
-            "Figma - Clean Code - Git/Flow - SCRUM - JIRA - LT(Liderança Técnica). \n"
-            "Design patterns - testes - MicroApps - GraphQL - MultiRepo - Payment SDKS",
+            "- MVC, MVP, MVVM, Clean arch, Clean Code, SOLID, Design patterns, Testes. \n"
+            "- Git, MicroApps, GraphQL, MultiRepo, CI/CD, Jenkins, Payment SDKS; \n"
+            "- Flutter, Android, IOs, Java. \n"
+            "- Figma, SCRUM, JIRA",
             style: GoogleFonts.montserrat(
               fontSize: 18,
             ),
@@ -82,13 +84,15 @@ class IntroductionResumeComponent extends StatelessWidget {
             height: 20,
           ),
           Text(
-            "- Projeto White label MobileBus(Flutter), Checkin(Nativo e FLUTTER), Agência Digital (Nativo), Agência Digital (Nativo), MovingTech(FLUTTER WEB e MOBILE) - TOTVS \n "
-            "- Hospital Albert Einstein (Flutter) - Avanade \n "
-            "- Supermercado Mambo Delivery (L.T, Flutter) - Accurate Software \n "
-            "- Aplicativo FONTE (Flutter) - Freelancer \n"
-            "- Meu Técnico(Claro, Android) - Accurate Software \n "
-            "- Portal LGPD(Claro, React) - Accurate Software \n "
-            "- Migração regionalizador OI(OI, Oracle Infrastructure Cloud) - Accurate Software entre outros. \n",
+            "- Projeto White Label MobileBus(Flutter), Checkin(Nativo e FLUTTER), "
+            "Agência Digital (Nativo), Venda Embarcada (Nativo), "
+            "MovingTech App/Backoffice(FLUTTER), "
+            "Bolivariano App/Backoffice (FLUTTER WEB e MOBILE) -> TOTVS \n"
+            "- Hospital Albert Einstein (Flutter) -> Avanade \n"
+            "- Supermercado Mambo Delivery (L.T, Flutter) -> Accurate Software \n"
+            "- Meu Técnico(Claro, Android) -> Accurate Software \n"
+            "- Portal LGPD(Claro, React) -> Accurate Software \n"
+            "- Migração regionalizador OI(OI, Oracle Infrastructure Cloud) -> Accurate Software",
             style: GoogleFonts.montserrat(
               fontSize: 18,
             ),

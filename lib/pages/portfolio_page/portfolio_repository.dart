@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:curriculo_online/core/models/portfolio_full.dart';
+import 'package:curriculo_online/core/models/portfolio/portfolio_full.dart';
 import 'package:flutter/services.dart';
 
 class PortfolioRepository {

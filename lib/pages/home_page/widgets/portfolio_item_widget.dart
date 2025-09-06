@@ -1,7 +1,6 @@
-import 'package:curriculo_online/core/models/portfolio.dart';
+import 'package:curriculo_online/core/models/portfolio/portfolio.dart';
 import 'package:flutter/material.dart';
-// ignore: avoid_web_libraries_in_flutter
-import 'dart:html' as html;
+import 'package:url_launcher/url_launcher.dart';
 
 class PortfolioItemWidget extends StatelessWidget {
   final Portfolio portfolio;
@@ -14,27 +13,58 @@ class PortfolioItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      hoverColor: MaterialStateColor.resolveWith(
-            (states) => Colors.transparent,
+      hoverColor: WidgetStateColor.resolveWith(
+        (states) => Colors.transparent,
       ),
       borderRadius: BorderRadius.circular(4),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(4),
-          color: Colors.blue.shade50,
-        ),
-        padding: const EdgeInsets.all(10),
-        margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(8),
-          child: Image.asset(
-            portfolio.images.first,
-            height: 200,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(8),
+        child: Container(
+          margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(4),
+            color: Colors.blue.shade50,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                alignment: Alignment.center,
+                decoration: const BoxDecoration(
+                  color: Colors.black38,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(8),
+                    topLeft: Radius.circular(8),
+                  ),
+                ),
+                child: Text(
+                  portfolio.title,
+                  style: const TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 5),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Image.asset(
+                  portfolio.images.first,
+                  height: 220,
+                ),
+              ),
+            ],
           ),
         ),
       ),
-      onTap: (){
-        html.window.open(portfolio.link, "_blank");
+      onTap: () async {
+        final Uri url = Uri.parse(portfolio.link);
+        if (await canLaunchUrl(url)) {
+          await launchUrl(
+            url,
+            mode: LaunchMode.externalApplication, // abre fora do app
+            webOnlyWindowName: '_blank', // garante nova aba no web
+          );
+        }
       },
     );
   }

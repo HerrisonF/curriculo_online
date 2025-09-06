@@ -1,8 +1,17 @@
 {
     "projects": [
         {
+            "title" : "Aplicativo QUEBUS",
+            "description" : "Desenvolvido para venda de passagens em pontos estratégicos. Aqui atuei como principal UX da aplicação (MOBILE APENAS), definindo toda a apresentação para a experiência do usuário. Também foi criado em Flutter WEB um BackOffice para que o usuário administre as questões financeiras e gerenciais da aplicação. Tecs: Flutter, Firebase, SDKs Pagamento, Rest, Channels, Notification",
+            "images": [
+                "assets/images/projetos/quebus/quebus_1.png",
+                "assets/images/projetos/quebus/quebus_2.png"
+            ],
+            "link" : "https://movingtech.com.br/"
+        },
+        {
             "title" : "Aplicativo White-Label",
-            "description" : "Desenvolvido para venda de passagens online. A aplicação se adapta por meio de parametrizações a cada tipo de usuário. Atuação em desenvolvimento de novas features, melhora no código, refatorações e propostas de novas ideias frente aos concorrentes, o que já conta com bons resultados, com algumas aplicações chegando próximas das 5 estrelas. Tecs: Flutter e Firebase",
+            "description" : "Desenvolvido para venda de passagens online. A aplicação se adapta por meio de parametrizações a cada tipo de usuário. Atuação em desenvolvimento de novas features, melhora no código, refatorações e propostas de novas ideias frente aos concorrentes, o que já conta com bons resultados, com algumas aplicações chegando próximas das 5 estrelas. Tecs: Flutter, Firebase, REST, Notification, Câmera, SDKs Pagamento.",
             "images": [
                 "assets/images/projetos/mobileBus/mobileBus_1.png",
                 "assets/images/projetos/mobileBus/mobileBus_2.png",
@@ -17,7 +26,7 @@
         },
         {
             "title" : "Aplicativo Espiritual",
-            "description" : "Primeira aplicação comercial freelance com alguns colegas. Nesse app trabalhei no desenvolvimento e estruturação da aplicação no front, enquanto outro colega atuava no back. Também contratamos uma terceira pessoa para desenhar a interface da aplicação e a logo. O app tem opções de pagamento, visualização de vídeos, perfis de membros e etc. Após a entrega, um dos colegas optou por suportar a aplicação com manutenções e atualizações. \n A Aplicação esta disponível, em Android e IOS.\n TECS: FLUTER, MOBX, GETIT.",
+            "description" : "Primeira aplicação comercial freelance com alguns colegas. Nesse app trabalhei no desenvolvimento e estruturação da aplicação no front, enquanto outro colega atuava no back. Também contratamos uma terceira pessoa para desenhar a interface da aplicação e a logo. O app tem opções de pagamento, visualização de vídeos, perfis de membros e etc. Após a entrega, um dos colegas optou por suportar a aplicação com manutenções e atualizações. \n A Aplicação esta disponível, em Android e IOS.\n TECS: FLUTER, MOBX, GETIT, REST.",
             "images": [
                 "assets/images/projetos/fonteReiki/fonte_reiki_1.png",
                 "assets/images/projetos/fonteReiki/fonte_reiki_2.png",
@@ -28,7 +37,7 @@
         },
         {
             "title" : "Aplicativo de E-commerce",
-            "description" : "Desenvolvimento para o supermercado Mambo. Entramos para substituir um aplicativo IONIC com nota abaixo de 3, neste novo app, atuei como líder técnico no projeto após indicar a nova tecnologia do Flutter. Ali, trabalhei no desenvolvimento, arquitetura, escolha de prioridades, criação e delegação de tasks. Nessa nova aplicação, recuperamos a nota do mesmo para 4.5! \n Tecs: Flutter, MOBX, GETIT.",
+            "description" : "Desenvolvimento para o supermercado Mambo. Entramos para substituir um aplicativo IONIC com nota abaixo de 3, neste novo app, atuei como líder técnico no projeto após indicar a nova tecnologia do Flutter. Ali, trabalhei no desenvolvimento, arquitetura, escolha de prioridades, criação e delegação de tasks. Nessa nova aplicação, recuperamos a nota do mesmo para 4.5! \n Tecs: Flutter, MOBX, GETIT, REST.",
             "images": [
                 "assets/images/projetos/mambo/mambo_1.png",
                 "assets/images/projetos/mambo/mambo_2.jpeg"
@@ -37,7 +46,7 @@
         },
         {
             "title" : "Watch Summoner",
-            "description" : "Aplicativo pessoal lançado na Play Store, com o tema League Of Legends.  Na aplicação é possível ver informações do profile do jogador e partidas em andamento em duas linguas diferentes PT_BR e EN_US. Na aplicação é utlizada a clean architecture em Flutter, interface idealizada utilizando o figma e fazendo uso das novas estruturas de value notifier. Para construção da aplicação e cruzamento de dados, foi utilizado as informações da Riot e toda a estrutura disponível em: developer.riotgames.com. Também aproveitei recursos da comunidade Data Dragon para algumas imagens.",
+            "description" : "Aplicativo pessoal lançado na Play Store, com o tema League Of Legends.  Na aplicação é possível ver informações do profile do jogador e partidas em andamento em duas linguas diferentes PT_BR e EN_US. Na aplicação é utlizada a clean architecture em Flutter, interface idealizada utilizando o figma e fazendo uso das novas estruturas de value notifier. Para construção da aplicação e cruzamento de dados, foi utilizado as informações da Riot e toda a estrutura disponível em: developer.riotgames.com. Também aproveitei recursos da comunidade Data Dragon para algumas imagens. Tecs: Flutter, REST.",
             "images": [
                 "assets/images/projetos/leagueOfLegends/lol_1.png",
                 "assets/images/projetos/leagueOfLegends/lol_2.png",
@@ -59,7 +68,7 @@
         },
         {
             "title" : "Meu Técnico",
-            "description" : "Participação no projeto MeuTecnico adicionando novas features e trabalhando em manutenções. O aplicativo Android da Claro(NET) busca auxiliar os técnicos em sua rotina com liberações de OS, rastreamento em escada, assinatura digital, entre outros.",
+            "description" : "Participação no projeto MeuTecnico adicionando novas features e trabalhando em manutenções. O aplicativo Android da Claro(NET) busca auxiliar os técnicos em sua rotina com liberações de OS, rastreamento em escada, assinatura digital, entre outros. Tecs: Java Android, Rest.",
             "images": [
                 "assets/images/projetos/meu-tecnico/meu_tecnico.png"
             ],
@@ -67,7 +76,7 @@
         },
         {
             "title" : "Estude Melhor",
-            "description" : "Aplicativo em Android utilizando o Firebase. Foi um APP para meu TCC, onde pesquisei uma forma melhor para decorar materiais de provas. O aplicativo seguia a linha de momorização por repetição(Leitner), onde os usuários cadastravam perguntas e respostas para estudar posteriormente com o passar dos dias. O aplicativo usava o feedback do usuário em cada questão para calcular quais eram as perguntas onde havia maior dificuldade e apresenta-las com mais frequência para que usuário memorizasse.",
+            "description" : "Aplicativo em Android utilizando o Firebase. Foi um APP para meu TCC, onde pesquisei uma forma melhor para decorar materiais de provas. O aplicativo seguia a linha de momorização por repetição(Leitner), onde os usuários cadastravam perguntas e respostas para estudar posteriormente com o passar dos dias. O aplicativo usava o feedback do usuário em cada questão para calcular quais eram as perguntas onde havia maior dificuldade e apresenta-las com mais frequência para que usuário memorizasse. Tecs: Java Android, Firebase.",
             "images": [
                 "assets/images/projetos/tcc/inicio-tcc.png",
                 "assets/images/projetos/tcc/listagem-tcc.png",

@@ -1,9 +1,9 @@
-import 'package:curriculo_online/core/models/portfolio_full.dart';
+import 'package:curriculo_online/core/models/portfolio/portfolio_full.dart';
 import 'package:curriculo_online/pages/portfolio_page/portfolio_controller.dart';
 import 'package:curriculo_online/pages/portfolio_page/widgets/portfolio_full_item_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:responsive_framework/responsive_row_column.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 
 import '../home_page/widgets/shimmer_loading_widget.dart';
 
@@ -38,7 +38,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
                 onTap: () {
                   portfolioController.goBack(context);
                 },
-                overlayColor: MaterialStateColor.resolveWith(
+                overlayColor: WidgetStateColor.resolveWith(
                   (states) => Colors.transparent,
                 ),
                 child: Container(

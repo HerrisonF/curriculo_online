@@ -20,14 +20,8 @@ class SkillWidget extends StatelessWidget {
       width: 120,
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            Colors.lightBlueAccent.shade200,
-            Colors.lightBlue.shade400,
-            Colors.lightBlueAccent.shade200,
-          ],
-        ),
-        borderRadius: BorderRadius.circular(8),
+        color: Colors.white60,
+        borderRadius: BorderRadius.circular(4),
       ),
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.COLUMN,
@@ -38,8 +32,8 @@ class SkillWidget extends StatelessWidget {
               title,
               style: GoogleFonts.montserrat(
                 fontSize: 14,
-                color: Colors.white,
-                fontWeight: FontWeight.w500
+                color: Colors.black,
+                fontWeight: FontWeight.w500,
               ),
             ),
           ),
@@ -60,7 +54,7 @@ class SkillWidget extends StatelessWidget {
                 children: level
                     .map((e) => const Icon(
                           Icons.star,
-                          color: Colors.yellow,
+                          color: Colors.deepPurple,
                           size: 20,
                         ))
                     .toList(),

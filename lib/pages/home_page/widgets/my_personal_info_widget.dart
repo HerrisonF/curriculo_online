@@ -1,70 +1,48 @@
+import 'package:curriculo_online/core/extensions/datetime_extension.dart';
+import 'package:curriculo_online/pages/home_page/widgets/my_social_media_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:responsive_framework/responsive_framework.dart';
-
-import '../../../core/util/date_util.dart';
 
 class MyPersonalInfoWidget extends StatelessWidget {
   final Alignment alignment;
+  final Function linkedinCallback;
+  final Function githubCallback;
 
-  const MyPersonalInfoWidget({Key? key, required this.alignment})
-      : super(key: key);
+  const MyPersonalInfoWidget({
+    Key? key,
+    required this.alignment,
+    required this.linkedinCallback,
+    required this.githubCallback,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveRowColumn(
-      layout: ResponsiveRowColumnType.COLUMN,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        ResponsiveRowColumnItem(
-          child: Container(
-            margin: const EdgeInsets.only(top: 10),
-            child: Align(
-              alignment: alignment,
+        Row(
+          children: [
+            Expanded(
               child: Text(
-                "Herrison Féres",
+                "Herrison Féres - Desenvolvedor de Software",
                 style: GoogleFonts.montserrat(
                   color: Colors.black,
-                  fontSize: 30,
+                  fontSize: 32,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
-          ),
+          ],
         ),
-        ResponsiveRowColumnItem(
-          child: Align(
-            alignment: alignment,
-            child: Container(
-              margin: const EdgeInsets.symmetric(vertical: 10),
-              child: FittedBox(
-                child: Text(
-                  "Engenheiro de Software Mobile".toUpperCase(),
-                  style: GoogleFonts.montserrat(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-            ),
-          ),
+        MySocialMediaWidget(
+          linkedinCallback: linkedinCallback,
+          githubCallback: githubCallback,
         ),
-        ResponsiveRowColumnItem(
-          child: Column(
-            children: [
-              ResponsiveRowColumnItem(
-                child: Align(
-                  alignment: alignment,
-                  child: Text(
-                    "${DateUtil.howOldIam()} anos",
-                    style: GoogleFonts.montserrat(
-                      color: Colors.black,
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+        Text(
+          "${DateTime.now().howOldIam} anos",
+          style: GoogleFonts.montserrat(
+            color: Colors.black,
+            fontSize: 16,
           ),
         ),
       ],

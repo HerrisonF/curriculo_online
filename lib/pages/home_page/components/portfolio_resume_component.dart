@@ -1,4 +1,4 @@
-import 'package:curriculo_online/core/models/portfolio_resumed.dart';
+import 'package:curriculo_online/core/models/portfolio/portfolio_resumed.dart';
 import 'package:curriculo_online/pages/home_page/home_page_controller.dart';
 import 'package:curriculo_online/pages/home_page/widgets/portfolio_item_widget.dart';
 import 'package:curriculo_online/pages/home_page/widgets/shimmer_loading_widget.dart';
@@ -110,8 +110,8 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
     return ResponsiveGridView.builder(
       itemCount: portfolio.portfolioResumes.length,
       gridDelegate: const ResponsiveGridDelegate(
-        maxCrossAxisExtent: 400,
-        minCrossAxisExtent: 300,
+        maxCrossAxisExtent: 300,
+        minCrossAxisExtent: 250,
       ),
       itemBuilder: (context, index) {
         return PortfolioItemWidget(
@@ -136,8 +136,8 @@ class _PortfolioResumeComponentState extends State<PortfolioResumeComponent> {
     return ShimmerLoadingWidget(
       howManyChilds: 3,
       child: Container(
-        width: 400,
-        height: 300,
+        width: 300,
+        height: 250,
         margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         decoration: BoxDecoration(
           color: Colors.grey.shade300,

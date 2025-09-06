@@ -1,4 +1,4 @@
-import 'package:curriculo_online/core/models/carrer_full.dart';
+import 'package:curriculo_online/core/models/carreira/carrer_full.dart';
 import 'package:curriculo_online/pages/home_page/home_page_controller.dart';
 import 'package:curriculo_online/pages/home_page/widgets/carrer_item_widget.dart';
 import 'package:curriculo_online/pages/home_page/widgets/shimmer_loading_widget.dart';

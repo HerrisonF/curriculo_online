@@ -1,4 +1,4 @@
-import 'package:curriculo_online/core/models/portfolio_full.dart';
+import 'package:curriculo_online/core/models/portfolio/portfolio_full.dart';
 import 'package:curriculo_online/pages/portfolio_page/portfolio_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';

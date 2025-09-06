@@ -1,9 +1,7 @@
+import 'package:curriculo_online/pages/home_page/components/skills_resume_component.dart';
 import 'package:curriculo_online/pages/home_page/widgets/my_personal_info_widget.dart';
 import 'package:curriculo_online/pages/home_page/widgets/my_picture_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_framework.dart';
-
-import '../widgets/my_social_media_widget.dart';
 
 ///Utilizado pela responsividade para apresentar o conteúdo de forma horizontal
 ///para os dispositivos maiores que o mobile
@@ -20,11 +18,9 @@ class HeaderHorizontalComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Colors.lightBlueAccent.shade700,
             Colors.lightBlueAccent.shade400,
             Colors.lightBlueAccent.shade200,
             Colors.lightBlueAccent.shade100,
@@ -33,39 +29,33 @@ class HeaderHorizontalComponent extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
         color: Colors.white,
       ),
-      child: ResponsiveRowColumn(
-        layout: ResponsiveRowColumnType.ROW,
+      child: Column(
         children: [
-           ResponsiveRowColumnItem(
-            child: Container(
-              margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-              child: const MyPictureWidget(
-                height: 250,
-                width: 250,
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              const SizedBox(width: 10),
+              const MyPictureWidget(
+                height: 160,
+                width: 160,
                 borderRadius: 4,
               ),
-            ),
-          ),
-          ResponsiveRowColumnItem(
-            child: Expanded(
-              child: ResponsiveRowColumn(
-                layout: ResponsiveRowColumnType.COLUMN,
-                children: [
-                  const ResponsiveRowColumnItem(
-                    child: MyPersonalInfoWidget(
-                      alignment: Alignment.centerLeft,
-                    ),
-                  ),
-                  ResponsiveRowColumnItem(
-                    child: MySocialMediaWidget(
-                      linkedinCallback: linkedinCallback,
-                      githubCallback: githubCallback,
-                    ),
-                  ),
-                ],
+              const SizedBox(width: 10),
+              Expanded(
+                child: MyPersonalInfoWidget(
+                  alignment: Alignment.centerLeft,
+                  githubCallback: githubCallback,
+                  linkedinCallback: linkedinCallback,
+                ),
               ),
-            ),
+            ],
           ),
+          const SizedBox(height: 10),
+          const Divider(
+            height: 1,
+            color: Colors.black38,
+          ),
+          const SkillsResumeComponent(),
         ],
       ),
     );

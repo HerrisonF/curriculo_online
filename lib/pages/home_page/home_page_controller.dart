@@ -1,5 +1,5 @@
-import 'package:curriculo_online/core/models/carrer_full.dart';
-import 'package:curriculo_online/core/models/portfolio_resumed.dart';
+import 'package:curriculo_online/core/models/carreira/carrer_full.dart';
+import 'package:curriculo_online/core/models/portfolio/portfolio_resumed.dart';
 import 'package:curriculo_online/pages/home_page/home_page_repository.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';

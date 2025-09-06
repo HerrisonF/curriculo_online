@@ -15,6 +15,7 @@ class SkillsResumeComponent extends StatelessWidget {
         _mainSkills(),
         _secondarySkills(),
         _languages(),
+        const ResponsiveRowColumnItem(child: SizedBox(height: 15)),
       ],
     );
   }
@@ -26,11 +27,11 @@ class SkillsResumeComponent extends StatelessWidget {
         children: [
           ResponsiveRowColumnItem(
             child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 20),
+              padding: const EdgeInsets.only(top: 20, bottom: 5),
               child: Text(
                 "Habilidades Mobile".toUpperCase(),
                 style: GoogleFonts.montserrat(
-                  fontSize: 22,
+                  fontSize: 24,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -86,7 +87,7 @@ class SkillsResumeComponent extends StatelessWidget {
         children: [
           ResponsiveRowColumnItem(
             child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 20),
+              padding: const EdgeInsets.only(top: 35, bottom: 5),
               child: Text(
                 "Habilidades Secundárias".toUpperCase(),
                 style: GoogleFonts.montserrat(
@@ -117,17 +118,6 @@ class SkillsResumeComponent extends StatelessWidget {
                     child: Container(
                       margin: const EdgeInsets.only(left: 5),
                       child: const SkillWidget(
-                        title: "REACT",
-                        level: [1,2,3],
-                        icon: FontAwesomeIcons.react,
-                      ),
-                    ),
-                  ),
-                  ResponsiveRowColumnItem(
-                    rowFit: FlexFit.tight,
-                    child: Container(
-                      margin: const EdgeInsets.only(left: 5),
-                      child: const SkillWidget(
                         title: "FIGMA",
                         level: [1,2,3],
                         icon: FontAwesomeIcons.figma,
@@ -150,11 +140,11 @@ class SkillsResumeComponent extends StatelessWidget {
         children: [
           ResponsiveRowColumnItem(
             child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 20),
-              child: const Text(
+              padding: const EdgeInsets.only(top: 35, bottom: 5),
+              child: Text(
                 "Idiomas",
-                style: TextStyle(
-                  fontSize: 18,
+                style: GoogleFonts.montserrat(
+                  fontSize: 16,
                 ),
               ),
             ),
