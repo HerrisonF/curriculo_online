@@ -43,7 +43,6 @@ class HeaderHorizontalComponent extends StatelessWidget {
               const SizedBox(width: 10),
               Expanded(
                 child: MyPersonalInfoWidget(
-                  alignment: Alignment.centerLeft,
                   githubCallback: githubCallback,
                   linkedinCallback: linkedinCallback,
                 ),

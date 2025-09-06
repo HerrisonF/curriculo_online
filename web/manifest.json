@@ -1,11 +1,11 @@
 {
-    "name": "curriculo_online",
-    "short_name": "curriculo_online",
+    "name": "Herrison Féres",
+    "short_name": "Herrison Féres",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Demonstração de Portfólio.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

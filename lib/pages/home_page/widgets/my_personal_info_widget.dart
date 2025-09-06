@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyPersonalInfoWidget extends StatelessWidget {
-  final Alignment alignment;
+  final bool vertical;
   final Function linkedinCallback;
   final Function githubCallback;
 
   const MyPersonalInfoWidget({
     Key? key,
-    required this.alignment,
+    this.vertical = false,
     required this.linkedinCallback,
     required this.githubCallback,
   }) : super(key: key);
@@ -18,13 +18,14 @@ class MyPersonalInfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: vertical ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
         Row(
           children: [
             Expanded(
               child: Text(
                 "Herrison Féres - Desenvolvedor de Software",
+                textAlign: vertical ? TextAlign.center : TextAlign.start,
                 style: GoogleFonts.montserrat(
                   color: Colors.black,
                   fontSize: 32,
@@ -37,6 +38,7 @@ class MyPersonalInfoWidget extends StatelessWidget {
         MySocialMediaWidget(
           linkedinCallback: linkedinCallback,
           githubCallback: githubCallback,
+          vertical: vertical,
         ),
         Text(
           "${DateTime.now().howOldIam} anos",

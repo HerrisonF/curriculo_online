@@ -22,25 +22,25 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           Container(
-            margin: const EdgeInsets.all(5),
+            margin: const EdgeInsets.only(left: 20, right: 20, top: 10),
             child: _homeHeader(),
           ),
           Container(
-            margin: const EdgeInsets.only(left: 5, right: 5, top: 10),
+            margin: const EdgeInsets.only(left: 20, right: 20, top: 10),
             child: _homeContent(),
           ),
           const SizedBox(
             height: 50,
           ),
           Container(
-            margin: const EdgeInsets.only(left: 5, right: 5),
+            margin: const EdgeInsets.only(left: 20, right: 20),
             child: _homePortfolio(),
           ),
           const SizedBox(
             height: 50,
           ),
           Container(
-            margin: const EdgeInsets.only(left: 5, right: 5),
+            margin: const EdgeInsets.only(left: 20, right: 20),
             child: _homeCarrerTimelineContent(),
           ),
           Container(

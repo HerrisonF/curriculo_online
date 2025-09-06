@@ -17,7 +17,7 @@ class MySocialMediaWidget extends StatelessWidget {
   final Function linkedinCallback;
   final Function githubCallback;
   final double iconSize;
-  final bool margin;
+  final bool vertical;
 
   static const int _valueToEqualizeLinkedinAndGithubIconSize = 2;
   static const Color iconColor = Colors.black;
@@ -27,7 +27,7 @@ class MySocialMediaWidget extends StatelessWidget {
     required this.linkedinCallback,
     required this.githubCallback,
     this.iconSize = 40,
-    this.margin = true,
+    this.vertical = true,
   }) : super(key: key);
 
   @override
@@ -37,7 +37,7 @@ class MySocialMediaWidget extends StatelessWidget {
       child: ResponsiveRowColumn(
         layout: ResponsiveRowColumnType.ROW,
         rowMainAxisAlignment:
-            margin ? MainAxisAlignment.start : MainAxisAlignment.center,
+            vertical ? MainAxisAlignment.center : MainAxisAlignment.start,
         children: [
           ResponsiveRowColumnItem(
             child: IconButton(
