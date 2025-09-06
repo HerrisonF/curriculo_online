@@ -11,6 +11,8 @@ Comandos úteis
 
 flutter build web --release --no-tree-shake-icons
 
+olhar na build/web
+
 Pegar o release gerado aqui e colocar na pasta do githubpages. Lá o deploy é feito de 
 forma automática ao dar push.
 -->

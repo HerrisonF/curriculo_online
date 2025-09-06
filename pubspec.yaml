@@ -2,7 +2,7 @@ name: curriculo_online
 description: Demonstração de portfólio.
 
 publish_to: 'none'
-version: 1.1.0+2
+version: 1.1.0+3
 
 environment:
   sdk: '>=3.0.0 <3.10.0'
