@@ -16,7 +16,7 @@ class IntroductionResumeComponent extends StatelessWidget {
         ],
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
             margin: const EdgeInsets.only(bottom: 10),
@@ -42,7 +42,7 @@ class IntroductionResumeComponent extends StatelessWidget {
             "mobile e prototipações de aplicações para clientes finais. \n Nem todos os projetos que participei"
             "estão aqui em imagens, pois se tratavam de aplicações mais internas que não vieram a público em lojas, "
             "então opto por não expor.",
-            textAlign: TextAlign.justify,
+            textAlign: TextAlign.left,
             style: GoogleFonts.montserrat(
               fontSize: 20,
             ),
@@ -68,7 +68,7 @@ class IntroductionResumeComponent extends StatelessWidget {
             style: GoogleFonts.montserrat(
               fontSize: 18,
             ),
-            textAlign: TextAlign.justify,
+            textAlign: TextAlign.left,
           ),
           const SizedBox(
             height: 20,

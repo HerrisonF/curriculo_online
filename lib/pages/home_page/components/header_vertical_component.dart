@@ -1,3 +1,4 @@
+import 'package:curriculo_online/pages/home_page/components/skills_resume_component.dart';
 import 'package:curriculo_online/pages/home_page/widgets/my_personal_info_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -55,6 +56,9 @@ class HeaderVerticalComponent extends StatelessWidget {
               githubCallback: githubCallback,
             ),
           ),
+          const ResponsiveRowColumnItem(
+            child: SkillsResumeComponent(),
+          )
         ],
       ),
     );

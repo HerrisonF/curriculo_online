@@ -2,7 +2,7 @@
     "projects": [
         {
             "title" : "Aplicativo QUEBUS",
-            "description" : "Desenvolvido para venda de passagens em pontos estratégicos. Aqui atuei como principal UX da aplicação (MOBILE APENAS), definindo toda a apresentação para a experiência do usuário. Também foi criado em Flutter WEB um BackOffice para que o usuário administre as questões financeiras e gerenciais da aplicação. Tecs: Flutter, Firebase, SDKs Pagamento, Rest, Channels, Notification",
+            "description" : "Desenvolvido para venda de passagens em pontos estratégicos. Aqui atuei como principal UX da aplicação (MOBILE APENAS), onde difini toda a apresentação para a experiência do usuário. Criei também a arquitetura, utilizando conceitos da Clean Arch. Também foi criado em Flutter WEB um BackOffice para que o usuário administre as questões financeiras e gerenciais da aplicação. Tecs: Flutter, Firebase, SDKs Pagamento, Rest, Channels, Notification, Clean arch",
             "images": [
                 "assets/images/projetos/quebus/quebus_1.png",
                 "assets/images/projetos/quebus/quebus_2.png"
