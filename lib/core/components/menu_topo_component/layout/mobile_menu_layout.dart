@@ -21,7 +21,7 @@ class MobileMenuLayout extends StatelessWidget {
       children: [
         const SizedBox(height: 25),
         Container(
-          padding: const EdgeInsets.only(left: 60, right: 15),
+          padding: const EdgeInsets.only(left: 35, right: 15),
           child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -30,9 +30,7 @@ class MobileMenuLayout extends StatelessWidget {
                 children: [
                   SizedBox(
                     width: 200,
-                    child: MenuRedesSociais(
-                      horizontal: true,
-                    ),
+                    child: MenuRedesSociais(),
                   ),
                   SizedBox(height: 15),
                   SizedBox(

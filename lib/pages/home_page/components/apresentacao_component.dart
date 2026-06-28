@@ -140,6 +140,7 @@ class ApresentacaoComponent extends StatelessWidget {
   Column _mobileLayout(BuildContext context){
     return Column(
       children: [
+        SizedBox(height: 35),
         const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

@@ -7,8 +7,8 @@ class CopyRightComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 85,
+    return Container(
+      margin: EdgeInsets.only(bottom: 15),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -17,7 +17,6 @@ class CopyRightComponent extends StatelessWidget {
             style: GoogleFonts.iceland(
               color: Colors.white70,
               fontSize: 16,
-              height: 1.5,
             ),
           ),
         ],

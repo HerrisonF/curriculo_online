@@ -12,10 +12,7 @@ class ProjetoDetalheWidget extends StatelessWidget {
 
   final CarouselSliderController _controller = CarouselSliderController();
 
-  ProjetoDetalheWidget({
-    super.key,
-    required this.portfolio,
-  });
+  ProjetoDetalheWidget({super.key, required this.portfolio});
 
   Future<void> _openSite() async {
     final uri = Uri.parse(portfolio.link);
@@ -32,14 +29,16 @@ class ProjetoDetalheWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: ScreenTypeHelper.isMobile(context: context) ? 15 : 25),
-      padding: EdgeInsets.all(ScreenTypeHelper.isMobile(context: context) ? 10 : 25),
+      margin: EdgeInsets.only(
+        bottom: ScreenTypeHelper.isMobile(context: context) ? 15 : 25,
+      ),
+      padding: EdgeInsets.all(
+        ScreenTypeHelper.isMobile(context: context) ? 10 : 25,
+      ),
       decoration: BoxDecoration(
         color: AZUL_ESCURO,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(
-          color: AZUL_EXTRA_ESCURO,
-        ),
+        border: Border.all(color: AZUL_EXTRA_ESCURO),
       ),
       child: Column(
         children: [
@@ -48,7 +47,7 @@ class ProjetoDetalheWidget extends StatelessWidget {
           const SizedBox(height: 35),
           _descriccao(),
           const SizedBox(height: 35),
-          _carrosel(context)
+          _carrosel(context),
         ],
       ),
     );
@@ -56,44 +55,43 @@ class ProjetoDetalheWidget extends StatelessWidget {
 
   Container _carrosel(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(
-        vertical: ScreenTypeHelper.isMobile(context: context) ? 10 : 30,
-      ),
       decoration: BoxDecoration(
         color: const Color(0xff0B1A2D),
         borderRadius: BorderRadius.circular(16),
       ),
-      child: SizedBox(
-        height: ScreenTypeHelper.isMobile(context: context) ? 370 : 550,
-        child: Stack(
-          children: [
-            Column(
-              children: [
-                CarouselSlider.builder(
-                  carouselController: _controller,
-                  itemCount: portfolio.images.length,
-                  options: CarouselOptions(
-                    height: ScreenTypeHelper.isMobile(context: context) ? 250 : 450,
-                    enlargeCenterPage: true,
-                    viewportFraction: ScreenTypeHelper.isMobile(context: context) ? 0.9 : .5,
-                    enlargeFactor: ScreenTypeHelper.isMobile(context: context) ? 0.2 : 0.4,
-                    enableInfiniteScroll: true,
-                  ),
-                  itemBuilder: (_, index, __) {
-                    return Image.asset(
-                      portfolio.images[index],
-                      fit: BoxFit.contain,
-                    );
-                  },
+      child: Stack(
+        children: [
+          Column(
+            children: [
+              CarouselSlider.builder(
+                carouselController: _controller,
+                itemCount: portfolio.images.length,
+                options: CarouselOptions(
+                  height: 210,
+                  enlargeCenterPage: true,
+                  viewportFraction: ScreenTypeHelper.isMobile(context: context)
+                      ? 0.9
+                      : .3,
+                  enlargeFactor: 0.2,
+                  enableInfiniteScroll: true,
                 ),
-                ScreenTypeHelper.isMobile(context: context) ? const SizedBox() : const SizedBox(height: 45),
-                OutlinedButton.icon(
+                itemBuilder: (_, index, __) {
+                  return Image.asset(
+                    portfolio.images[index],
+                    fit: BoxFit.contain,
+                  );
+                },
+              ),
+              ScreenTypeHelper.isMobile(context: context)
+                  ? const SizedBox(height: 25)
+                  : const SizedBox(height: 25),
+              Container(
+                margin: EdgeInsets.only(bottom: 15),
+                child: OutlinedButton.icon(
                   onPressed: _openSite,
                   style: OutlinedButton.styleFrom(
                     minimumSize: const Size(200, 55),
-                    side: const BorderSide(
-                      color: AZUL_CLARINHO,
-                    ),
+                    side: const BorderSide(color: AZUL_CLARINHO),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -101,17 +99,12 @@ class ProjetoDetalheWidget extends StatelessWidget {
                   iconAlignment: IconAlignment.end,
                   label: Text(
                     cliqueParaVisitarSite,
-                    style: GoogleFonts.roboto(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
+                    style: GoogleFonts.roboto(color: Colors.white, fontSize: 18),
                   ),
                   icon: Container(
                     margin: const EdgeInsets.only(left: 15),
                     decoration: BoxDecoration(
-                      border: Border.all(
-                        color: AZUL_CLARINHO,
-                      ),
+                      border: Border.all(color: AZUL_CLARINHO),
                       shape: BoxShape.circle,
                     ),
                     padding: const EdgeInsets.all(4),
@@ -121,47 +114,38 @@ class ProjetoDetalheWidget extends StatelessWidget {
                       size: 16,
                     ),
                   ),
-                )
-              ],
+                ),
+              ),
+            ],
+          ),
+          if (portfolio.images.length > 1)
+            Positioned(
+              left: 15,
+              bottom: 10,
+              child: _arrowButton(Icons.chevron_left, () {
+                _controller.previousPage(
+                  duration: const Duration(milliseconds: 300),
+                  curve: Curves.linear,
+                );
+              }),
             ),
-            if (portfolio.images.length > 1)
-              Positioned(
-                left: 15,
-                bottom: 0,
-                child: _arrowButton(
-                  Icons.chevron_left,
-                  () {
-                    _controller.previousPage(
-                      duration: const Duration(milliseconds: 300),
-                      curve: Curves.linear,
-                    );
-                  },
-                ),
-              ),
-            if (portfolio.images.length > 1 )
-              Positioned(
-                right: 15,
-                bottom: 0,
-                child: _arrowButton(
-                  Icons.chevron_right,
-                  () {
-                    _controller.nextPage(
-                      duration: const Duration(milliseconds: 300),
-                      curve: Curves.linear,
-                    );
-                  },
-                ),
-              ),
-          ],
-        ),
+          if (portfolio.images.length > 1)
+            Positioned(
+              right: 15,
+              bottom: 10,
+              child: _arrowButton(Icons.chevron_right, () {
+                _controller.nextPage(
+                  duration: const Duration(milliseconds: 300),
+                  curve: Curves.linear,
+                );
+              }),
+            ),
+        ],
       ),
     );
   }
 
-  Widget _arrowButton(
-    IconData icon,
-    VoidCallback onPressed,
-  ) {
+  Widget _arrowButton(IconData icon, VoidCallback onPressed) {
     return Material(
       color: Colors.transparent,
       child: InkWell(
@@ -173,14 +157,9 @@ class ProjetoDetalheWidget extends StatelessWidget {
           decoration: BoxDecoration(
             color: AZUL_ESCURO.withValues(alpha: .85),
             shape: BoxShape.circle,
-            border: Border.all(
-              color: AZUL_CLARINHO,
-            ),
+            border: Border.all(color: AZUL_CLARINHO),
           ),
-          child: Icon(
-            icon,
-            color: AZUL_CLARINHO,
-          ),
+          child: Icon(icon, color: AZUL_CLARINHO),
         ),
       ),
     );
@@ -189,32 +168,24 @@ class ProjetoDetalheWidget extends StatelessWidget {
   Text _descriccao() {
     return Text(
       portfolio.description,
-      style: const TextStyle(
-        color: BRANCO,
-        fontSize: 20,
-        height: 1.6,
-      ),
+      style: const TextStyle(color: BRANCO, fontSize: 20),
     );
   }
 
   Text _modelo() {
     return Text(
       portfolio.modelo,
-      style: GoogleFonts.audiowide(
-        color: AZUL_CLARINHO,
-        fontSize: 20,
-      ),
+      style: GoogleFonts.audiowide(color: AZUL_CLARINHO, fontSize: 20),
     );
   }
 
   Text _titulo(BuildContext context) {
     return Text(
       portfolio.title.toUpperCase(),
-      style: GoogleFonts.audiowide(
-        color: AZUL_CLARINHO,
-        fontSize: 30,
-      ),
-      textAlign: ScreenTypeHelper.isMobile(context: context) ? TextAlign.center : TextAlign.start,
+      style: GoogleFonts.audiowide(color: AZUL_CLARINHO, fontSize: 26),
+      textAlign: ScreenTypeHelper.isMobile(context: context)
+          ? TextAlign.center
+          : TextAlign.start,
     );
   }
 }

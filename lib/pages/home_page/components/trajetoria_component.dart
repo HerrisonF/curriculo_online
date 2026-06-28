@@ -179,6 +179,7 @@ class _TrajetoriaComponentState extends State<TrajetoriaComponent> {
             ? CrossAxisAlignment.center
             : CrossAxisAlignment.start,
         children: [
+          const SizedBox(height: 30),
           Text(
             direcao,
             style: GoogleFonts.iceland(

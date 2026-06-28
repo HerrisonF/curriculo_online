@@ -20,15 +20,12 @@ class WebMenuLayout extends StatelessWidget {
     return Row(
       children: [
         Logo(pageSize: pageSize),
+        const SizedBox(width: 25),
         const MenuRedesSociais(),
-        const SizedBox(width: 50),
         Expanded(
           flex: 5,
-          child: SizedBox(
-            height: 60,
-            child: MenuBotoes(
-              controller: controller,
-            ),
+          child: MenuBotoes(
+            controller: controller,
           ),
         ),
         const SizedBox(width: 50),

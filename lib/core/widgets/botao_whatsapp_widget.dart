@@ -19,7 +19,7 @@ class BotaoWhatsappWidget extends StatelessWidget {
             color: AZUL_BORDA,
           ),
         ),
-        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

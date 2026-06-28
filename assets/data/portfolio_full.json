@@ -2,7 +2,7 @@
     "projects": [
         {
             "title" : "Web site e identidade visual. \n Advocacia Thais Martins",
-            "description" : "Desenvolvido para evidenciar o trabalho da Advogada Thais Martins e seus pontos fortes. Aqui atuei criando toda a identidade visual do cliente e trazendo à tona o refinamento da profissão, hospedagem e domínio. Tecs: Flutter, GoDaddy(Hospedagem/Dominio). Modelo: Freelance.",
+            "description" : "Desenvolvido para evidenciar o trabalho da Advogada Thais Martins e seus pontos fortes. Aqui atuei criando toda a identidade visual do cliente e trazendo à tona o refinamento da profissão, hospedagem e domínio.",
             "images": [
                 "assets/images/projetos/thais_site/thais_1.png",
                 "assets/images/projetos/thais_site/thais_2.png",
@@ -13,20 +13,24 @@
                 "assets/images/projetos/thais_site/thais_7.png",
                 "assets/images/projetos/thais_site/thais_8.png"
             ],
-            "link" : "https://thaismartinsadvocacia.com.br/"
+            "link" : "https://thaismartinsadvocacia.com.br/",
+            "modelo": "Freelance.",
+            "tecs": "Flutter, GoDaddy(Hospedagem/Dominio) e Outros."
         },
         {
             "title" : "Aplicativo QUEBUS",
-            "description" : "Desenvolvido para venda de passagens em pontos estratégicos. Aqui atuei como principal UX da aplicação (MOBILE APENAS), onde difini toda a apresentação para a experiência do usuário. Criei também a arquitetura, utilizando conceitos da Clean Arch. Também foi criado em Flutter WEB um BackOffice para que o usuário administre as questões financeiras e gerenciais da aplicação. Tecs: Flutter, Firebase, SDKs Pagamento, Rest, Channels, Notification, Clean arch. Modelo: CLT.",
+            "description" : "Desenvolvido para venda de passagens em pontos estratégicos. Aqui atuei como principal UX da aplicação (MOBILE APENAS), onde difini toda a apresentação para a experiência do usuário. Criei também a arquitetura, utilizando conceitos da Clean Arch. Também foi criado em Flutter WEB um BackOffice para que o usuário administre as questões financeiras e gerenciais da aplicação.",
             "images": [
                 "assets/images/projetos/quebus/quebus_1.png",
                 "assets/images/projetos/quebus/quebus_2.png"
             ],
-            "link" : "https://movingtech.com.br/"
+            "link" : "https://movingtech.com.br/",
+            "modelo": "CLT.",
+            "tecs": "Flutter, Firebase, SDKs Pagamento, Rest, Channels, Notification, Clean arch e Outros."
         },
         {
             "title" : "Aplicativo White-Label",
-            "description" : "Desenvolvido para venda de passagens online. A aplicação se adapta por meio de parametrizações a cada tipo de usuário. Atuação em desenvolvimento de novas features, melhora no código, refatorações e propostas de novas ideias frente aos concorrentes, o que já conta com bons resultados, com algumas aplicações chegando próximas das 5 estrelas. Tecs: Flutter, Firebase, REST, Notification, Câmera, SDKs Pagamento. Modelo: CLT.",
+            "description" : "Desenvolvido para venda de passagens online. A aplicação se adapta por meio de parametrizações a cada tipo de usuário. Atuação em desenvolvimento de novas features, melhora no código, refatorações e propostas de novas ideias frente aos concorrentes, o que já conta com bons resultados, com algumas aplicações chegando próximas das 5 estrelas.",
             "images": [
                 "assets/images/projetos/mobileBus/mobileBus_1.png",
                 "assets/images/projetos/mobileBus/mobileBus_2.png",
@@ -37,31 +41,37 @@
                 "assets/images/projetos/mobileBus/mobileBus_7.png",
                 "assets/images/projetos/mobileBus/mobileBus_8.png"
             ],
-            "link" : "https://play.google.com/store/apps/details?id=br.com.rjconsultores.rotatransportes&hl=pt_BR&gl=US"
+            "link" : "https://play.google.com/store/apps/details?id=br.com.rjconsultores.rotatransportes&hl=pt_BR&gl=US",
+            "modelo": "CLT.",
+            "tecs": "Flutter, Firebase, REST, Notification, Câmera, SDKs Pagamento e Outros."
         },
         {
             "title" : "Aplicativo Espiritual",
-            "description" : "Nesse app trabalhei no desenvolvimento e estruturação da aplicação no front, enquanto outro colega atuava no back. Também contratamos uma terceira pessoa para desenhar a interface da aplicação e a logo. O app tem opções de pagamento, visualização de vídeos, perfis de membros e etc. Após a entrega, um dos colegas optou por suportar a aplicação com manutenções e atualizações. \n A Aplicação esta disponível, em Android e IOS.\n TECS: FLUTER, MOBX, GETIT, REST. Modelo: Freelance.",
+            "description" : "Nesse app trabalhei no desenvolvimento e estruturação da aplicação no front, enquanto outro colega atuava no back. Também contratamos uma terceira pessoa para desenhar a interface da aplicação e a logo. O app tem opções de pagamento, visualização de vídeos, perfis de membros e etc. Após a entrega, um dos colegas optou por suportar a aplicação com manutenções e atualizações. \n A Aplicação esta disponível, em Android e IOS.",
             "images": [
                 "assets/images/projetos/fonteReiki/fonte_reiki_1.png",
                 "assets/images/projetos/fonteReiki/fonte_reiki_2.png",
                 "assets/images/projetos/fonteReiki/fonte_reiki_3.png",
                 "assets/images/projetos/fonteReiki/fonte_reiki_4.png"
             ],
-            "link" : "https://apps.apple.com/br/app/fonte-reiki/id1632754325"
+            "link" : "https://apps.apple.com/br/app/fonte-reiki/id1632754325",
+            "modelo" : "Freelance.",
+            "tecs" : "FLUTER, MOBX, GETIT, REST e Outros."
         },
         {
             "title" : "Aplicativo de E-commerce",
-            "description" : "Desenvolvimento para o supermercado Mambo. Entramos para substituir um aplicativo IONIC com nota abaixo de 3, neste novo app, atuei como líder técnico no projeto após indicar a nova tecnologia do Flutter. Ali, trabalhei no desenvolvimento, arquitetura, escolha de prioridades, criação e delegação de tasks. Nessa nova aplicação, recuperamos a nota do mesmo para 4.5! \n Tecs: Flutter, MOBX, GETIT, REST. Modelo: CLT.",
+            "description" : "Desenvolvimento para o supermercado Mambo. Entramos para substituir um aplicativo IONIC com nota abaixo de 3, neste novo app, atuei como líder técnico no projeto após indicar a nova tecnologia do Flutter. Ali, trabalhei no desenvolvimento, arquitetura, escolha de prioridades, criação e delegação de tasks. Nessa nova aplicação, recuperamos a nota do mesmo para 4.5!",
             "images": [
                 "assets/images/projetos/mambo/mambo_1.png",
                 "assets/images/projetos/mambo/mambo_2.jpeg"
             ],
-            "link" : "https://play.google.com/store/apps/details?id=br.com.app.mambodelivery"
+            "link" : "https://play.google.com/store/apps/details?id=br.com.app.mambodelivery",
+            "modelo" : "CLT.",
+            "tecs" : "Flutter, MOBX, GETIT, REST e Outros."
         },
         {
             "title" : "Watch Summoner",
-            "description" : "Aplicativo pessoal lançado na Play Store, com o tema League Of Legends.  Na aplicação é possível ver informações do profile do jogador e partidas em andamento em duas linguas diferentes PT_BR e EN_US. Na aplicação é utlizada a clean architecture em Flutter, interface idealizada utilizando o figma e fazendo uso das novas estruturas de value notifier. Para construção da aplicação e cruzamento de dados, foi utilizado as informações da Riot e toda a estrutura disponível em: developer.riotgames.com. Também aproveitei recursos da comunidade Data Dragon para algumas imagens. Tecs: Flutter, REST. Modelo: Pessoal.",
+            "description" : "Aplicativo pessoal lançado na Play Store, com o tema League Of Legends.  Na aplicação é possível ver informações do profile do jogador e partidas em andamento em duas linguas diferentes PT_BR e EN_US. Na aplicação é utlizada a clean architecture em Flutter, interface idealizada utilizando o figma e fazendo uso das novas estruturas de value notifier. Para construção da aplicação e cruzamento de dados, foi utilizado as informações da Riot e toda a estrutura disponível em: developer.riotgames.com. Também aproveitei recursos da comunidade Data Dragon para algumas imagens.",
             "images": [
                 "assets/images/projetos/leagueOfLegends/lol_1.png",
                 "assets/images/projetos/leagueOfLegends/lol_2.png",
@@ -70,42 +80,52 @@
                 "assets/images/projetos/leagueOfLegends/lol_5.png",
                 "assets/images/projetos/leagueOfLegends/lol_6.png"
             ],
-            "link" : "https://play.google.com/store/apps/details?id=com.herrison.legends_panel"
+            "link" : "https://play.google.com/store/apps/details?id=com.herrison.legends_panel",
+            "modelo" : "Pessoal.",
+            "tecs" : "Flutter, REST e Outros."
         },
         {
             "title" : "CLARO LGPD",
-            "description" : "Participação no Projeto LGPD da Claro. O portal consiste em atender à lei conforme os direitos de compartilhamento de informação do usuário. Neste, participei como front-end com uso de REACT e Mondrian(Design System da CLARO) e também ajustando as configurações de cookies em um serviço específico para isso, a OneTrust. POCs em mobile com uso do Flutter e consumo REST. Modelo: CLT.",
+            "description" : "Participação no Projeto LGPD da Claro. O portal consiste em atender à lei conforme os direitos de compartilhamento de informação do usuário. Neste, participei como front-end com uso de REACT e Mondrian(Design System da CLARO) e também ajustando as configurações de cookies em um serviço específico para isso, a OneTrust.",
             "images": [
                 "assets/images/projetos/claro-lgpd/claro_1.png",
                 "assets/images/projetos/claro-lgpd/claro_2.png"
             ],
-            "link" : "https://www.claro.com.br/privacidade/politica-de-privacidade"
+            "link" : "https://www.claro.com.br/privacidade/politica-de-privacidade",
+            "modelo" : "CLT.",
+            "tecs" : "REACT, REST e Outros."
         },
         {
             "title" : "Meu Técnico",
-            "description" : "Participação no projeto MeuTecnico adicionando novas features e trabalhando em manutenções. O aplicativo Android da Claro(NET) busca auxiliar os técnicos em sua rotina com liberações de OS, rastreamento em escada, assinatura digital, entre outros. Tecs: Java Android, Rest. Modelo: CLT.",
+            "description" : "Participação no projeto MeuTecnico adicionando novas features e trabalhando em manutenções. O aplicativo Android da Claro(NET) busca auxiliar os técnicos em sua rotina com liberações de OS, rastreamento em escada, assinatura digital, entre outros.",
             "images": [
                 "assets/images/projetos/meu-tecnico/meu_tecnico.png"
             ],
-            "link" : "https://play.google.com/store/apps/details?id=br.com.net.meutecnico"
+            "link" : "https://play.google.com/store/apps/details?id=br.com.net.meutecnico",
+            "modelo" : "CLT.",
+            "tecs" : "Java Android, Rest e Outros."
         },
         {
             "title" : "CIP",
-            "description" : "Participação no Projeto de integração da CIP. O projeto consistia na integração de suas informações com utilização do OIC (Oracle Cloud Infrastructure). Neste, atuei na nuvem da Oracle utilizando ferramentas para entrada, manipulação e saida de dados, centralizando várias APIs em único ponto. Modelo: CLT.",
+            "description" : "Participação no Projeto de integração da CIP. O projeto consistia na integração de suas informações com utilização do OIC (Oracle Cloud Infrastructure). Neste, atuei na nuvem da Oracle utilizando ferramentas para entrada, manipulação e saida de dados, centralizando várias APIs em único ponto.",
             "images": [
                 "assets/images/projetos/cip/cip_1.png",
                 "assets/images/projetos/cip/cip_2.png"
             ],
-            "link" : "https://www2.cip-bancos.org.br/Paginas/Sobre.aspx"
+            "link" : "https://www2.cip-bancos.org.br/Paginas/Sobre.aspx",
+            "modelo" : "CLT.",
+            "tecs" : "OIC e Outros."
         },
         {
             "title" : "Migração OI",
-            "description" : "Participação no Projeto de migração do regionalizador da OI. Consistia em transferir o regionalizador do OIC Classic para um OIC mais atualizado. As tecnologias utilizadas foram Docker e Kubernetes para integrar ao OKE do OIC, e também Spring e OAuth2 para o backend. Modelo: CLT.",
+            "description" : "Participação no Projeto de migração do regionalizador da OI. Consistia em transferir o regionalizador do OIC Classic para um OIC mais atualizado.",
             "images": [
                 "assets/images/projetos/proje-oi/oi_1.png",
                 "assets/images/projetos/proje-oi/oi_2.png"
             ],
-            "link" : "https://www.oi.com.br/"
+            "link" : "https://www.oi.com.br/",
+            "modelo" : "CLT.",
+            "tecs" : "Docker, Kubernetes, OKE do OIC,Spring, OAuth2 e Outros."
         },
         {
             "title" : "Estude Melhor",
@@ -116,7 +136,9 @@
                 "assets/images/projetos/tcc/password-tcc.png",
                 "assets/images/projetos/tcc/pergunta-tcc.png"
             ],
-            "link" : "http://luciene.pro.br/?p=58"
+            "link" : "http://luciene.pro.br/?p=58",
+            "modelo" : "Pessoal",
+            "tecs" : "Android, Firebase e Outros."
         }
     ]
 }

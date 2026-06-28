@@ -7,9 +7,9 @@ class ScreenTypeHelper {
     required BuildContext context,
   }) {
     if (MediaQuery.of(context).size.width <= mobileWidth) {
-      return 300;
+      return 290;
     }
-    return 214;
+    return 100;
   }
 
   static bool isMobile({
@@ -31,7 +31,7 @@ class ScreenTypeHelper {
     required BuildContext context,
   }) {
     if (MediaQuery.of(context).size.width <= mobileWidth) {
-      return 600;
+      return 630;
     }
     return 690;
   }

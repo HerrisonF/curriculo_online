@@ -6,48 +6,13 @@ import 'package:website/core/constants/color.dart';
 import 'package:website/core/constants/strings.dart';
 
 class MenuRedesSociais extends StatelessWidget {
-  final bool horizontal;
-
-  const MenuRedesSociais({
-    super.key,
-    this.horizontal = false,
-  });
+  const MenuRedesSociais({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.all(
-              Radius.circular(16),
-            ),
-            border: Border(
-              top: BorderSide(
-                color: AZUL_BORDA,
-                width: 2,
-              ),
-              bottom: BorderSide(
-                width: 2,
-                color: AZUL_BORDA,
-              ),
-            ),
-          ),
-          child: horizontal ? _mobileLayout() : _webLayout(),
-        )
-      ],
-    );
-  }
-
-  Column _webLayout() {
-    return Column(
-      children: [
-        _botaoRedeSocialGIT(),
-        const SizedBox(height: 15),
-        _botaoRedeSocialLINKEDIN(),
-      ],
+      children: [_mobileLayout()],
     );
   }
 
@@ -58,6 +23,7 @@ class MenuRedesSociais extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           _botaoRedeSocialGIT(),
+          SizedBox(width: 15),
           _botaoRedeSocialLINKEDIN(),
         ],
       ),
@@ -68,16 +34,8 @@ class MenuRedesSociais extends StatelessWidget {
     return InkWell(
       child: Column(
         children: [
-          FaIcon(
-            FontAwesomeIcons.github,
-            color: BRANCO,
-          ),
-          Text(
-            botaoGit,
-            style: GoogleFonts.iceland(
-              color: BRANCO,
-            ),
-          )
+          FaIcon(FontAwesomeIcons.github, color: BRANCO),
+          Text(botaoGit, style: GoogleFonts.iceland(color: BRANCO)),
         ],
       ),
       onTap: () {
@@ -90,16 +48,8 @@ class MenuRedesSociais extends StatelessWidget {
     return InkWell(
       child: Column(
         children: [
-          FaIcon(
-            FontAwesomeIcons.linkedin,
-            color: BRANCO,
-          ),
-          Text(
-            botaoLinkedin,
-            style: GoogleFonts.iceland(
-              color: BRANCO,
-            ),
-          )
+          FaIcon(FontAwesomeIcons.linkedin, color: BRANCO),
+          Text(botaoLinkedin, style: GoogleFonts.iceland(color: BRANCO)),
         ],
       ),
       onTap: () {
@@ -109,15 +59,10 @@ class MenuRedesSociais extends StatelessWidget {
   }
 
   Future<void> _abrirGit() async {
-    final uri = Uri.parse(
-      'https://github.com/HerrisonF',
-    );
+    final uri = Uri.parse('https://github.com/HerrisonF');
 
     if (await canLaunchUrl(uri)) {
-      await launchUrl(
-        uri,
-        mode: LaunchMode.externalApplication,
-      );
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
     }
   }
 
@@ -127,10 +72,7 @@ class MenuRedesSociais extends StatelessWidget {
     );
 
     if (await canLaunchUrl(uri)) {
-      await launchUrl(
-        uri,
-        mode: LaunchMode.externalApplication,
-      );
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
     }
   }
 }
