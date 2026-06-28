@@ -1,0 +1,52 @@
+name: website
+description: "Web Site portfólio."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons:
+  intl:
+  font_awesome_flutter:
+  go_router:
+  get_it:
+  google_fonts:
+  url_launcher:
+  flutter_html:
+  shimmer:
+  carousel_slider:
+  timeline_tile:
+  flutter_launcher_icons:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/projetos/cip/
+    - assets/images/projetos/claro-lgpd/
+    - assets/images/projetos/leagueOfLegends/
+    - assets/images/projetos/mambo/
+    - assets/images/projetos/meu-tecnico/
+    - assets/images/projetos/mobileBus/
+    - assets/images/projetos/proje-oi/
+    - assets/images/projetos/tcc/
+    - assets/images/projetos/fonteReiki/
+    - assets/images/projetos/quebus/
+    - assets/images/projetos/thais_site/
+    - assets/data/
+    - assets/logo/
