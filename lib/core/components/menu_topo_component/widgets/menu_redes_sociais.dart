@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:website/core/constants/color.dart';
@@ -20,10 +19,10 @@ class MenuRedesSociais extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 15),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           _botaoRedeSocialGIT(),
-          SizedBox(width: 15),
+          SizedBox(width: 35),
           _botaoRedeSocialLINKEDIN(),
         ],
       ),
@@ -34,7 +33,7 @@ class MenuRedesSociais extends StatelessWidget {
     return InkWell(
       child: Column(
         children: [
-          FaIcon(FontAwesomeIcons.github, color: BRANCO),
+          Icon(Icons.hub, color: BRANCO),
           Text(botaoGit, style: GoogleFonts.iceland(color: BRANCO)),
         ],
       ),
@@ -48,7 +47,7 @@ class MenuRedesSociais extends StatelessWidget {
     return InkWell(
       child: Column(
         children: [
-          FaIcon(FontAwesomeIcons.linkedinIn, color: BRANCO),
+          Icon(Icons.work, color: BRANCO),
           Text(botaoLinkedin, style: GoogleFonts.iceland(color: BRANCO)),
         ],
       ),

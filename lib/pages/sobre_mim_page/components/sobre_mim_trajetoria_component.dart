@@ -38,7 +38,7 @@ class _SobreMimTrajetoriaComponentState
           const LinhaHabilidadesComponent(
             texto: tituloTrajetoria,
           ),
-          const SizedBox(height: 25),
+          const SizedBox(height: 40),
           _trajetoria(),
         ],
       ),
@@ -70,8 +70,8 @@ class _SobreMimTrajetoriaComponentState
                     const Padding(
                       padding: EdgeInsets.only(top: 15),
                       child: SizedBox(
-                        width: 50,
-                        height: 8,
+                        width: 40,
+                        height: 4,
                         child: CirculoPointWidget(),
                       ),
                     ),

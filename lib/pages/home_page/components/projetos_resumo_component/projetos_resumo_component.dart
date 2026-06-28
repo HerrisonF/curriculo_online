@@ -34,7 +34,6 @@ class _ProjetosResumoComponentState extends State<ProjetosResumoComponent> {
         ),
         const SizedBox(height: 30),
         Container(
-          margin: EdgeInsets.only(left: ScreenTypeHelper.isMobile(context: context)  ? 5 : 50),
           height: ScreenTypeHelper.cardResumeComponentWidth(context: context),
           child: ValueListenableBuilder(
             valueListenable: widget.homePageController.portolioResumed.itens,

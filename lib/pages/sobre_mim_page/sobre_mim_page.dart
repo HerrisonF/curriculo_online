@@ -26,6 +26,7 @@ class SobreMimPage extends StatelessWidget {
             ScreenTypeHelper.isMobile(context: context) ? const SizedBox() : SobreMimTrajetoriaComponent(
               controller: _controller,
             ),
+            SizedBox(height: 40),
             const AjudaProfissionalComponent(),
             const CopyRightComponent(),
           ],

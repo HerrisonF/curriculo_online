@@ -88,6 +88,7 @@ class CarreiraComponent extends StatelessWidget {
             fontSize: ScreenTypeHelper.isMobile(context: context) ? 16 : 22,
             height: 1.6,
           ),
+          textAlign: TextAlign.justify,
         ),
         const SizedBox(height: 50),
         _lista(
@@ -151,8 +152,8 @@ class CarreiraComponent extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontSize: 22,
-            height: 1.6,
           ),
+          textAlign: TextAlign.justify,
         ),
         const SizedBox(height: 50),
         Row(
@@ -170,7 +171,6 @@ class CarreiraComponent extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 50),
               child: Image.asset(
                 decoracaoTech,
-                height: 380,
               ),
             ),
             Expanded(
@@ -218,7 +218,7 @@ class CarreiraComponent extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: ScreenTypeHelper.isMobile(context: context) ? 15 : 50,
+          height: 15,
         ),
         Center(
           child: Text(

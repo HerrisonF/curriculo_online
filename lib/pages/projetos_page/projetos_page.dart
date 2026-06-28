@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:website/core/components/menu_topo_component/menu_topo_component_controller.dart';
-import 'package:website/core/components/menu_topo_component/widgets/menu_botoes.dart';
+import 'package:website/core/components/copy_ritght_component/copy_right_component.dart';
+import 'package:website/core/components/menu_topo_component/menu_topo_component.dart';
 import 'package:website/core/constants/color.dart';
 import 'package:website/core/helper/screen_type_helper.dart';
-import 'package:website/core/inject/inject.dart';
 import 'package:website/pages/projetos_page/portfolio_controller.dart';
 import 'package:website/pages/projetos_page/widgets/projeto_detalhe_widget.dart';
 
 class ProjetosPage extends StatefulWidget {
-  const ProjetosPage({Key? key}) : super(key: key);
+  const ProjetosPage({super.key});
 
   @override
   State<ProjetosPage> createState() => _ProjetosPageState();
@@ -31,10 +30,7 @@ class _ProjetosPageState extends State<ProjetosPage> {
       backgroundColor: AZUL_ESCURO,
       body: Column(
         children: [
-          SizedBox(
-            height: 75,
-            child: MenuBotoes(controller: getIt<MenuTopoComponentController>()),
-          ),
+          MenuTopoComponent(),
           Expanded(
             child: Container(
               margin: EdgeInsets.only(
@@ -49,8 +45,13 @@ class _ProjetosPageState extends State<ProjetosPage> {
                       : ListView.builder(
                           itemCount: itens.length,
                           itemBuilder: (context, index) {
-                            return ProjetoDetalheWidget(
-                              portfolio: itens[index],
+                            return Column(
+                              children: [
+                                ProjetoDetalheWidget(portfolio: itens[index]),
+                                index + 1 == itens.length
+                                    ? CopyRightComponent()
+                                    : SizedBox(),
+                              ],
                             );
                           },
                         );

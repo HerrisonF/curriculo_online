@@ -113,8 +113,7 @@ class _TrajetoriaComponentState extends State<TrajetoriaComponent> {
                   ),
                 )
               : null,
-          margin: const EdgeInsets.only(left: 35),
-          height: 120,
+          height: 110,
           child: ValueListenableBuilder(
             valueListenable: widget.controller.carreiraResumed.itens,
             builder: (context, itens, child) {
@@ -125,7 +124,7 @@ class _TrajetoriaComponentState extends State<TrajetoriaComponent> {
                       itemCount: itens.length,
                       itemBuilder: (context, index) {
                         return Container(
-                          margin: const EdgeInsets.only(bottom: 15, right: 15),
+                          margin: EdgeInsets.only(bottom: 15, right: 15, left: index == 0 ? 15 : 0),
                           child: Row(
                             children: [
                               const SizedBox(width: 15),
