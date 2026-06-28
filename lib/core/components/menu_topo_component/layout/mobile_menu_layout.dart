@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:website/core/components/menu_topo_component/menu_topo_component_controller.dart';
 import 'package:website/core/components/menu_topo_component/widgets/menu_botoes.dart';
 import 'package:website/core/components/menu_topo_component/widgets/menu_redes_sociais.dart';
+import 'package:website/core/helper/screen_type_helper.dart';
 import 'package:website/core/widgets/botao_whatsapp_widget.dart';
 import 'package:website/core/widgets/logo.dart';
 
@@ -42,7 +43,7 @@ class MobileMenuLayout extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(height: 25),
+        SizedBox(height: ScreenTypeHelper.isMobile(context: context) ? 5 : 25),
         SizedBox(
           height: 75,
           child: MenuBotoes(

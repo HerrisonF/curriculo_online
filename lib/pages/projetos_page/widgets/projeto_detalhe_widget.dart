@@ -44,9 +44,9 @@ class ProjetoDetalheWidget extends StatelessWidget {
         children: [
           _titulo(context),
           _modelo(),
-          const SizedBox(height: 35),
+          const SizedBox(height: 15),
           _descriccao(),
-          const SizedBox(height: 35),
+          const SizedBox(height: 15),
           _carrosel(context),
         ],
       ),

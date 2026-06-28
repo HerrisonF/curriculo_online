@@ -48,7 +48,7 @@ class MenuRedesSociais extends StatelessWidget {
     return InkWell(
       child: Column(
         children: [
-          FaIcon(FontAwesomeIcons.linkedin, color: BRANCO),
+          FaIcon(FontAwesomeIcons.linkedinIn, color: BRANCO),
           Text(botaoLinkedin, style: GoogleFonts.iceland(color: BRANCO)),
         ],
       ),

@@ -19,7 +19,7 @@ class MenuTopoComponent extends StatelessWidget {
     final double height = ScreenTypeHelper.menuHeight(context: context);
     return Container(
       height: height,
-      padding: const EdgeInsets.all(25),
+      padding: const EdgeInsets.only(right: 15, left: 15),
       decoration: const BoxDecoration(
         color: AZUL_ESCURO,
       ),

@@ -7,7 +7,7 @@ class ScreenTypeHelper {
     required BuildContext context,
   }) {
     if (MediaQuery.of(context).size.width <= mobileWidth) {
-      return 290;
+      return 220;
     }
     return 100;
   }

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:website/core/components/copy_ritght_component/copy_right_component.dart';
-import 'package:website/core/components/menu_topo_component/menu_topo_component.dart';
+import 'package:website/core/components/menu_topo_component/menu_topo_component_controller.dart';
+import 'package:website/core/components/menu_topo_component/widgets/menu_botoes.dart';
 import 'package:website/core/constants/color.dart';
 import 'package:website/core/helper/screen_type_helper.dart';
+import 'package:website/core/inject/inject.dart';
 import 'package:website/pages/projetos_page/portfolio_controller.dart';
 import 'package:website/pages/projetos_page/widgets/projeto_detalhe_widget.dart';
 
@@ -15,8 +16,8 @@ class ProjetosPage extends StatefulWidget {
 }
 
 class _ProjetosPageState extends State<ProjetosPage> {
-  final PortfolioController portfolioController =
-      GetIt.I.get<PortfolioController>();
+  final PortfolioController portfolioController = GetIt.I
+      .get<PortfolioController>();
 
   @override
   void initState() {
@@ -30,26 +31,33 @@ class _ProjetosPageState extends State<ProjetosPage> {
       backgroundColor: AZUL_ESCURO,
       body: Column(
         children: [
-          MenuTopoComponent(),
+          SizedBox(
+            height: 75,
+            child: MenuBotoes(controller: getIt<MenuTopoComponentController>()),
+          ),
           Expanded(
             child: Container(
-              margin: EdgeInsets.all(ScreenTypeHelper.isMobile(context: context) ? 15 : 25),
+              margin: EdgeInsets.only(
+                left: ScreenTypeHelper.isMobile(context: context) ? 5 : 25,
+                right: ScreenTypeHelper.isMobile(context: context) ? 5 : 25,
+              ),
               child: ValueListenableBuilder(
                 valueListenable: portfolioController.portolioResumed.itens,
                 builder: (context, itens, _) {
-                  return itens.isEmpty ? const SizedBox() : ListView.builder(
-                    itemCount: itens.length,
-                    itemBuilder: (context, index) {
-                      return ProjetoDetalheWidget(
-                        portfolio: itens[index],
-                      );
-                    },
-                  );
+                  return itens.isEmpty
+                      ? const SizedBox()
+                      : ListView.builder(
+                          itemCount: itens.length,
+                          itemBuilder: (context, index) {
+                            return ProjetoDetalheWidget(
+                              portfolio: itens[index],
+                            );
+                          },
+                        );
                 },
               ),
             ),
           ),
-          const CopyRightComponent(),
         ],
       ),
     );
