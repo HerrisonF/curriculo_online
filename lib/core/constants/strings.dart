@@ -53,7 +53,7 @@ const sobreMimProjetos =
     "- Projeto White Label MobileBus(Flutter), Checkin(Nativo e FLUTTER), "
     "Agência Digital (Nativo), Venda Embarcada (Nativo), "
     "MovingTech App/Backoffice(FLUTTER), "
-    "Bolivariano App/Backoffice (FLUTTER WEB e MOBILE) -> TOTVS \n"
+    "Bolivariano App/Backoffice (FLUTTER WEB e MOBILE) -> RJ CONSULTORES \n"
     "- Hospital Albert Einstein (Flutter) -> Avanade \n"
     "- Supermercado Mambo Delivery (L.T, Flutter) -> Accurate Software \n"
     "- Meu Técnico(Claro, Android) -> Accurate Software \n"
