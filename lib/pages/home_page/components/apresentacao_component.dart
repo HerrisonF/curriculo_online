@@ -66,13 +66,6 @@ class ApresentacaoComponent extends StatelessWidget {
                         fontSize: 16,
                       ),
                     ),
-                    Text(
-                      apresentacao3,
-                      style: GoogleFonts.montserrat(
-                        color: BRANCO,
-                        fontSize: 16,
-                      ),
-                    ),
                   ],
                 ),
               ),

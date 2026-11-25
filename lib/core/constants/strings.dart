@@ -1,5 +1,5 @@
 const siteTitle =
-    'Herrison Féres - Desenvolvedor Mobile | Flutter | Android | IOs';
+    'Herrison Féres - Desenvolvedor | Flutter | Android | IOs';
 const botaoInicio = 'Inicio';
 const botaoSobreMim = 'Sobre mim';
 const botaoProjetos = 'Projetos';
@@ -12,7 +12,6 @@ const profissao = 'Analista de sistemas Sênior';
 const apresentacao1 = 'Desenvolvimento de apps escaláveis e performáticos.';
 const apresentacao2 =
     'Experiência em diferentes ambientes e projetos: Web, Mobile e outros.';
-const apresentacao3 = 'Especialista em limpeza de vibecoding.';
 const apresentacao4 =
     'Construção de landpages, web sites e aplicações com layout refinado que agregam e enchem os olhos dos usuários.';
 const apresentacao5 = 'Aplicação em lojas Apple e Play Store.';
@@ -49,16 +48,6 @@ const sobreMimOutrosConhecimentos =
     "- Git, MicroApps, GraphQL, MultiRepo, CI/CD, Jenkins, Payment SDKS; \n"
     "- Flutter, Android, IOs, Java. \n"
     "- Figma, SCRUM, JIRA";
-const sobreMimProjetos =
-    "- Projeto White Label MobileBus(Flutter), Checkin(Nativo e FLUTTER), "
-    "Agência Digital (Nativo), Venda Embarcada (Nativo), "
-    "MovingTech App/Backoffice(FLUTTER), "
-    "Bolivariano App/Backoffice (FLUTTER WEB e MOBILE) -> RJ CONSULTORES \n"
-    "- Hospital Albert Einstein (Flutter) -> Avanade \n"
-    "- Supermercado Mambo Delivery (L.T, Flutter) -> Accurate Software \n"
-    "- Meu Técnico(Claro, Android) -> Accurate Software \n"
-    "- Portal LGPD(Claro, React) -> Accurate Software \n"
-    "- Migração regionalizador OI(OI, Oracle Infrastructure Cloud) -> Accurate Software";
 const tituloTrajetoria = "TRAJETÓRIA";
 const direcao = "Direção";
 const direcaoDescricao = "Experiência em liderança de equipe e Scrum master. "
@@ -78,4 +67,4 @@ const carreira = "CARREIRA";
 const algunsOutrosConhecimento = "ALGUNS OUTROS CONHECIMENTOS";
 const algunsProjetosParticipei = "ALGUNS PROJETOS EM QUE PARTICIPEI";
 const futuro =  "Futuro ?";
-const aprimorando =  "Estou sempre aprimorando meu conhecimento em mobile, qualidade e arquitetura.";
+const aprimorando =  "Estou sempre aprimorando meu conhecimento em mobile, outras tecnologias, qualidade e arquitetura.";

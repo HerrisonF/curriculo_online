@@ -97,12 +97,6 @@ class CarreiraComponent extends StatelessWidget {
           context,
         ),
         const SizedBox(height: 30),
-        _lista(
-          algunsProjetosParticipei,
-          sobreMimProjetos,
-          context,
-        ),
-        const SizedBox(height: 30),
         Text(
           futuro,
           style: GoogleFonts.montserrat(
@@ -171,13 +165,6 @@ class CarreiraComponent extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 50),
               child: Image.asset(
                 decoracaoTech,
-              ),
-            ),
-            Expanded(
-              child: _lista(
-                algunsProjetosParticipei,
-                sobreMimProjetos,
-                context,
               ),
             ),
           ],

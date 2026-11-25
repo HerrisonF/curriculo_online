@@ -1,10 +1,17 @@
 {
   "items": [
     {
-      "title" : "Senior Mobile Developer",
+      "title" : "Software Development Analyst III",
+      "subTitle" : "Distribusion",
+      "description" : "White Label projects, native and in Flutter, with a large number of customized clients and other projects for administrative control and payment. \n- Responsible for maintaining, adding, testing new features and ideas for improving the product in general. Using Figma and experience in Flutter-Dart, I build maintainable and scalable designs, focusing on our productivity and quality to increase and maintain the ratings of the applications in the store. \n- Development of architectures and definition of technologies for new projects. \n Use of Figma to create prototypes for clients and designs \n Migration of native/legacy code to new Flutter applications. \n -Flutter MOBILE e WEB / android / iOS / Firebase / Payment SDKS / Own Plug-ins / PIX / SCRUM / JIRA / Code refactoring for best practices / development for payment machines / SOLID / CICD / Automated Testing / Versionamento em lojas Apple & Play Store / Internacionalização de apps",
+      "duration" : "2026 - Atual",
+      "iconCode" : "0xe6f2"
+    },
+    {
+      "title" : "Analista de sistemas III",
       "subTitle" : "RJ Consultores",
       "description" : "Empresa líder de vendas em passagens de ônibus na América Latina. Projetos white label, nativos e em Flutter, com grande grade de clientes customizados e outros projetos para controle administrativo e pagamento.\n- Responsável pela manutenção, adição, teste de novas features e ideias para melhoria do produto em geral. Com uso do Figma e experiência em Flutter-Dart, construo designs manuteníveis e escaláveis, com atenção em nossa produtividade e qualidade para o aumento das notas das aplicações em loja. - Desenvolvimento de arquiteturas e definição de tecnologias para novos projetos.\n- Uso do Figma para criar protótipos para clientes e designs. \n -Flutter MOBILE e WEB / android / iOS / Firebase / SDKS de pagamento / Plug-ins próprios / PIX / Nupay / SCRUM / JIRA / integração de redes sociais / refatoração do código para melhores práticas / desenvolvimento para máquinas de pagamento / SOLID / CICD / GraphQL / Testes automatizados / Versionamento em lojas Apple & Play Store / Internacionalização de apps/ Câmera / notifications",
-      "duration" : "2022 - Atual",
+      "duration" : "2022 - 2026",
       "iconCode" : "0xe6f2"
     },
     {
